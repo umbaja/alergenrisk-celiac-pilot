@@ -1,0 +1,218 @@
+column,type,description
+sample_id,string,Syntetický identifikátor; nevzťahuje sa na skutočnú osobu.
+generation_seed,integer,Seed deterministického generátora.
+model_version,string,Verzia modelového registra.
+chip_profile,category,Syntetický stresový profil pokrytia; nie meranie komerčného čipu.
+true_hla_diplotype,category,Simulovaný pravý HLA diplotyp použitý oracle modelom.
+true_rs4143332,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs4143332,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs4143332,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs4143332,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs3128927,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs3128927,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs3128927,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs3128927,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs2301226,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs2301226,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs2301226,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs2301226,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs6937061,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs6937061,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs6937061,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs6937061,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1611710,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1611710,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1611710,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1611710,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs13132308,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs13132308,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs13132308,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs13132308,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs2030519,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs2030519,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs2030519,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs2030519,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1359062,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1359062,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1359062,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1359062,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs17264332,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs17264332,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs17264332,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs17264332,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs6715106,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs6715106,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs6715106,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs6715106,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs55743914,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs55743914,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs55743914,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs55743914,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs990171,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs990171,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs990171,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs990171,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1980422,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1980422,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1980422,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1980422,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs3184504,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs3184504,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs3184504,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs3184504,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs61907765,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs61907765,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs61907765,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs61907765,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs13003464,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs13003464,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs13003464,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs13003464,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs11875687,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs11875687,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs11875687,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs11875687,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs12068671,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs12068671,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs12068671,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs12068671,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1250552,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1250552,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1250552,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1250552,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs10892258,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs10892258,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs10892258,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs10892258,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1018326,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1018326,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1018326,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1018326,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs182429,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs182429,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs182429,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs182429,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs7104791,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs7104791,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs7104791,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs7104791,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs4821124,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs4821124,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs4821124,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs4821124,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs4445406,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs4445406,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs4445406,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs4445406,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs12142280,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs12142280,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs12142280,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs12142280,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs6498114,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs6498114,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs6498114,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs6498114,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1353248,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1353248,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1353248,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1353248,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs2387397,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs2387397,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs2387397,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs2387397,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1893592,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1893592,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1893592,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1893592,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs11851414,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs11851414,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs11851414,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs11851414,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1378938,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1378938,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1378938,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1378938,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs10800746,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs10800746,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs10800746,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs10800746,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1050976,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1050976,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1050976,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1050976,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs7616215,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs7616215,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs7616215,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs7616215,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs2561288,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs2561288,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs2561288,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs2561288,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs61579022,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs61579022,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs61579022,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs61579022,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs10167650,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs10167650,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs10167650,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs10167650,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs17849502,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs17849502,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs17849502,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs17849502,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs6806528,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs6806528,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs6806528,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs6806528,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs2364484,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs2364484,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs2364484,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs2364484,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs9610686,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs9610686,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs9610686,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs9610686,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs2187668,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs2187668,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs2187668,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs2187668,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1617322,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1617322,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1617322,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1617322,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs7454108,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs7454108,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs7454108,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs7454108,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs3957146,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs3957146,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs3957146,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs3957146,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs1049124,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs1049124,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs1049124,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs1049124,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs7775228,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs7775228,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs7775228,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs7775228,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs73405471,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs73405471,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs73405471,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs73405471,category,"Pôvod hodnoty: direct, proxy alebo population."
+true_rs79550239,integer,"Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+obs_rs79550239,number,Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom.
+quality_rs79550239,number,"Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+source_rs79550239,category,"Pôvod hodnoty: direct, proxy alebo population."
+predicted_hla_diplotype,category,HLA diplotyp odvodený z pozorovaných tag SNP.
+hla_confidence,number,Technická stabilita HLA odhadu v rozsahu 0 až 1.
+oracle_score,number,"Referenčné syntetické skóre na mriežke 0,02 bodu."
+observed_reference_score,number,"Skóre vypočítané z priamych, proxy a populačných vstupov."
+oracle_class,integer,"Kód triedy: 0 low, 1 typical, 2 high."
+oracle_label,category,Relatívna trieda syntetického oracle.
+direct_count,integer,Počet priamo pozorovaných cieľových markerov.
+proxy_count,integer,Počet markerov získaných prostredníctvom proxy.
+population_imputed_count,integer,Počet markerov nahradených populačným očakávaním.
+coverage_fraction,number,Podiel priamych a proxy markerov zo všetkých 50 cieľov.
+label_rationale,string,Textové pravidlo rozhodovacej hranice.
+split,category,"Fixné rozdelenie train, validation alebo test."

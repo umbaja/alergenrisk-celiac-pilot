@@ -1,0 +1,1087 @@
+[
+  {
+    "column": "sample_id",
+    "type": "string",
+    "description": "Syntetický identifikátor; nevzťahuje sa na skutočnú osobu."
+  },
+  {
+    "column": "generation_seed",
+    "type": "integer",
+    "description": "Seed deterministického generátora."
+  },
+  {
+    "column": "model_version",
+    "type": "string",
+    "description": "Verzia modelového registra."
+  },
+  {
+    "column": "chip_profile",
+    "type": "category",
+    "description": "Syntetický stresový profil pokrytia; nie meranie komerčného čipu."
+  },
+  {
+    "column": "true_hla_diplotype",
+    "type": "category",
+    "description": "Simulovaný pravý HLA diplotyp použitý oracle modelom."
+  },
+  {
+    "column": "true_rs4143332",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs4143332",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs4143332",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs4143332",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs3128927",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs3128927",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs3128927",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs3128927",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs2301226",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs2301226",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs2301226",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs2301226",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs6937061",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs6937061",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs6937061",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs6937061",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1611710",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1611710",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1611710",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1611710",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs13132308",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs13132308",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs13132308",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs13132308",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs2030519",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs2030519",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs2030519",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs2030519",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1359062",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1359062",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1359062",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1359062",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs17264332",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs17264332",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs17264332",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs17264332",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs6715106",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs6715106",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs6715106",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs6715106",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs55743914",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs55743914",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs55743914",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs55743914",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs990171",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs990171",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs990171",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs990171",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1980422",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1980422",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1980422",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1980422",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs3184504",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs3184504",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs3184504",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs3184504",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs61907765",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs61907765",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs61907765",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs61907765",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs13003464",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs13003464",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs13003464",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs13003464",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs11875687",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs11875687",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs11875687",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs11875687",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs12068671",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs12068671",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs12068671",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs12068671",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1250552",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1250552",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1250552",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1250552",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs10892258",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs10892258",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs10892258",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs10892258",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1018326",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1018326",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1018326",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1018326",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs182429",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs182429",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs182429",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs182429",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs7104791",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs7104791",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs7104791",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs7104791",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs4821124",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs4821124",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs4821124",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs4821124",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs4445406",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs4445406",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs4445406",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs4445406",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs12142280",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs12142280",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs12142280",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs12142280",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs6498114",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs6498114",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs6498114",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs6498114",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1353248",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1353248",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1353248",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1353248",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs2387397",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs2387397",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs2387397",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs2387397",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1893592",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1893592",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1893592",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1893592",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs11851414",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs11851414",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs11851414",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs11851414",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1378938",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1378938",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1378938",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1378938",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs10800746",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs10800746",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs10800746",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs10800746",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1050976",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1050976",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1050976",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1050976",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs7616215",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs7616215",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs7616215",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs7616215",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs2561288",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs2561288",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs2561288",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs2561288",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs61579022",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs61579022",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs61579022",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs61579022",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs10167650",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs10167650",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs10167650",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs10167650",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs17849502",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs17849502",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs17849502",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs17849502",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs6806528",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs6806528",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs6806528",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs6806528",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs2364484",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs2364484",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs2364484",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs2364484",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs9610686",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs9610686",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs9610686",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs9610686",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs2187668",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs2187668",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs2187668",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs2187668",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1617322",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1617322",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1617322",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1617322",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs7454108",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs7454108",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs7454108",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs7454108",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs3957146",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs3957146",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs3957146",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs3957146",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs1049124",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs1049124",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs1049124",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs1049124",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs7775228",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs7775228",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs7775228",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs7775228",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs73405471",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs73405471",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs73405471",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs73405471",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "true_rs79550239",
+    "type": "integer",
+    "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+  },
+  {
+    "column": "obs_rs79550239",
+    "type": "number",
+    "description": "Pozorovaná alebo odhadnutá dávka efektovej alely použitá modelom."
+  },
+  {
+    "column": "quality_rs79550239",
+    "type": "number",
+    "description": "Kvalita genetického vstupu: 1 direct, proxy accuracy, 0 population."
+  },
+  {
+    "column": "source_rs79550239",
+    "type": "category",
+    "description": "Pôvod hodnoty: direct, proxy alebo population."
+  },
+  {
+    "column": "predicted_hla_diplotype",
+    "type": "category",
+    "description": "HLA diplotyp odvodený z pozorovaných tag SNP."
+  },
+  {
+    "column": "hla_confidence",
+    "type": "number",
+    "description": "Technická stabilita HLA odhadu v rozsahu 0 až 1."
+  },
+  {
+    "column": "oracle_score",
+    "type": "number",
+    "description": "Referenčné syntetické skóre na mriežke 0,02 bodu."
+  },
+  {
+    "column": "observed_reference_score",
+    "type": "number",
+    "description": "Skóre vypočítané z priamych, proxy a populačných vstupov."
+  },
+  {
+    "column": "oracle_class",
+    "type": "integer",
+    "description": "Kód triedy: 0 low, 1 typical, 2 high."
+  },
+  {
+    "column": "oracle_label",
+    "type": "category",
+    "description": "Relatívna trieda syntetického oracle."
+  },
+  {
+    "column": "direct_count",
+    "type": "integer",
+    "description": "Počet priamo pozorovaných cieľových markerov."
+  },
+  {
+    "column": "proxy_count",
+    "type": "integer",
+    "description": "Počet markerov získaných prostredníctvom proxy."
+  },
+  {
+    "column": "population_imputed_count",
+    "type": "integer",
+    "description": "Počet markerov nahradených populačným očakávaním."
+  },
+  {
+    "column": "coverage_fraction",
+    "type": "number",
+    "description": "Podiel priamych a proxy markerov zo všetkých 50 cieľov."
+  },
+  {
+    "column": "label_rationale",
+    "type": "string",
+    "description": "Textové pravidlo rozhodovacej hranice."
+  },
+  {
+    "column": "split",
+    "type": "category",
+    "description": "Fixné rozdelenie train, validation alebo test."
+  }
+]

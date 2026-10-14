@@ -1,0 +1,51 @@
+{
+  "release": "v0.1.0",
+  "files": [
+    {
+      "path": "config/celiac_model_v1.json",
+      "sha256": "14661d948e774d29e0533839c1af6c149326de04b76b97b77a42121faa25b4a4",
+      "bytes": 9003
+    },
+    {
+      "path": "config/celiac_proxy_audit_v1.json",
+      "sha256": "5fec3251d53aa5a0d257b423cd39d561a92f8bd35340cae5ac30d9074c8754bc",
+      "bytes": 11955
+    },
+    {
+      "path": "data/synthetic/celiac_pilot_v1.csv.gz",
+      "sha256": "bba1ff01636b5eed3f71ec5730d28d31940b5aed6e6b52a43eb2ac56bdd2388f",
+      "bytes": 749057
+    },
+    {
+      "path": "artifacts/models/structured.npz",
+      "sha256": "51da4e02cb78541748fd221355df191248cd13807327fc87a120ed4f05c5e05e",
+      "bytes": 6429
+    },
+    {
+      "path": "site/assets/structured-model.json",
+      "sha256": "83e6dc39a79863fd603118ba0b8ec5b5de585da8c81374305b2748d51f5035ec",
+      "bytes": 20041
+    },
+    {
+      "path": "output/pdf/AlergenRisk_Celiac_Pilot_Procesna_mapa.pdf",
+      "sha256": "53a174c01196cc4f6868c99134a1674b0cefa9c1fd75de549fe02b6197ea5ba7",
+      "bytes": 83487
+    },
+    {
+      "path": "output/pdf/AlergenRisk_Celiac_Pilot_Technicka_sprava.pdf",
+      "sha256": "9bc992d7b3fd21ee4d922ec2eaf28a2b692552b7718ed5ceee604a8ad520cf53",
+      "bytes": 83041
+    },
+    {
+      "path": "output/pdf/AlergenRisk_Celiac_Pilot_Validacna_sprava.pdf",
+      "sha256": "dd98b8394a2bdfaa8e3c44dcb105d664d04378730912bf7706d3d18794690db7",
+      "bytes": 84181
+    },
+    {
+      "path": "output/pdf/AlergenRisk_Celiac_Pilot_Vyskumna_studia.pdf",
+      "sha256": "e10a7c67270e6743b41e25c37374fb7a3a44a0da3c420e5fac16b926facbe59a",
+      "bytes": 85459
+    }
+  ],
+  "clinical_validation": false
+}

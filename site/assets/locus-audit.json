@@ -1,0 +1,1540 @@
+{
+  "catalog": {
+    "schema_version": "1.0",
+    "catalog_id": "alergenrisk-celiac-proxy-audit-v1",
+    "genome_build": "GRCh37",
+    "population": "1000GENOMES:phase_3:EUR",
+    "reference_samples": 503,
+    "reference_haplotypes": 1006,
+    "minimum_automatic_r2": 0.9,
+    "chip_availability_policy": "runtime-detected from the uploaded export; no vendor-wide claim is made because chip revisions differ",
+    "sources": [
+      {
+        "id": "ensembl-ld-pairwise",
+        "url": "https://rest.ensembl.org/documentation/info/ld_pairwise_get",
+        "role": "pairwise LD definition and population-specific r2/D-prime fields"
+      },
+      {
+        "id": "1000-genomes-phase-3",
+        "url": "https://www.internationalgenome.org/data-portal/data-collection/phase3/",
+        "role": "phased GRCh37 EUR reference panel"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "target": "rs4143332",
+      "group": "core",
+      "gene": "HLA-B*08:01",
+      "risk_allele": "G",
+      "weight": 0.425,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs2596565",
+          "proxy_risk_allele": "G",
+          "r2": 0.987025,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.011905
+        },
+        {
+          "id": "rs2523571",
+          "proxy_risk_allele": "T",
+          "r2": 0.987025,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.011905
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs3128927",
+      "group": "core",
+      "gene": "HLA-DP",
+      "risk_allele": "T",
+      "weight": 0.372,
+      "haplotype": null,
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs2301226",
+      "group": "core",
+      "gene": "HLA-DP",
+      "risk_allele": "G",
+      "weight": -0.371,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9277336",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs9277334",
+          "proxy_risk_allele": "A",
+          "r2": 0.991234,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.007634
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs6937061",
+      "group": "core",
+      "gene": "HLA-DP",
+      "risk_allele": "G",
+      "weight": 0.174,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs55821907",
+          "proxy_risk_allele": "C",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs115544840",
+          "proxy_risk_allele": "T",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1611710",
+      "group": "core",
+      "gene": "HLA-F",
+      "risk_allele": "T",
+      "weight": 0.351,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9258682",
+          "proxy_risk_allele": "T",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs9258680",
+          "proxy_risk_allele": "C",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs13132308",
+      "group": "core",
+      "gene": "IL2",
+      "risk_allele": "G",
+      "weight": -0.342,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs13129806",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs6822844",
+          "proxy_risk_allele": "T",
+          "r2": 0.970108,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.004695
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs2030519",
+      "group": "core",
+      "gene": "LPP",
+      "risk_allele": "G",
+      "weight": -0.274,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs6778720",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs6790260",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1359062",
+      "group": "core",
+      "gene": "RGS1",
+      "risk_allele": "C",
+      "weight": -0.261,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs2984919",
+          "proxy_risk_allele": "A",
+          "r2": 0.993439,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.00122
+        },
+        {
+          "id": "rs1323292",
+          "proxy_risk_allele": "G",
+          "r2": 0.993439,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.00122
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs17264332",
+      "group": "core",
+      "gene": "TNFAIP3",
+      "risk_allele": "G",
+      "weight": 0.255,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs6927172",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs6920220",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs6715106",
+      "group": "core",
+      "gene": "STAT4",
+      "risk_allele": "G",
+      "weight": -0.236,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs7574608",
+          "proxy_risk_allele": "T",
+          "r2": 0.980452,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.981481,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs1400656",
+          "proxy_risk_allele": "G",
+          "r2": 0.960526,
+          "d_prime": 0.980064,
+          "p_target_if_proxy": 0.981132,
+          "p_target_if_other": 0.001049
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs55743914",
+      "group": "core",
+      "gene": "PTPRK",
+      "risk_allele": "T",
+      "weight": 0.191,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs41285280",
+          "proxy_risk_allele": "T",
+          "r2": 0.988686,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.002564
+        },
+        {
+          "id": "rs3190930",
+          "proxy_risk_allele": "T",
+          "r2": 0.960834,
+          "d_prime": 0.988557,
+          "p_target_if_proxy": 0.978355,
+          "p_target_if_other": 0.002581
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs990171",
+      "group": "core",
+      "gene": "IL18RAP",
+      "risk_allele": "A",
+      "weight": 0.182,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs11123931",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs1403554",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1980422",
+      "group": "core",
+      "gene": "ICOS",
+      "risk_allele": "C",
+      "weight": 0.174,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs7588874",
+          "proxy_risk_allele": "G",
+          "r2": 0.994859,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.996198,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7422494",
+          "proxy_risk_allele": "G",
+          "r2": 0.994846,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.001342
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs3184504",
+      "group": "core",
+      "gene": "SH2B3",
+      "risk_allele": "T",
+      "weight": 0.174,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs7310615",
+          "proxy_risk_allele": "C",
+          "r2": 0.996012,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.997863,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7137828",
+          "proxy_risk_allele": "C",
+          "r2": 0.992015,
+          "d_prime": 0.995999,
+          "p_target_if_proxy": 0.993576,
+          "p_target_if_other": 0.005566
+        },
+        {
+          "id": "rs653178",
+          "proxy_risk_allele": "C",
+          "r2": 0.984074,
+          "d_prime": 0.995976,
+          "p_target_if_proxy": 0.982942,
+          "p_target_if_other": 0.011173
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs61907765",
+      "group": "core",
+      "gene": "ETS1",
+      "risk_allele": "T",
+      "weight": 0.166,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs7117768",
+          "proxy_risk_allele": "G",
+          "r2": 0.946683,
+          "d_prime": 0.994387,
+          "p_target_if_proxy": 0.963415,
+          "p_target_if_other": 0.001316
+        },
+        {
+          "id": "rs11221332",
+          "proxy_risk_allele": "T",
+          "r2": 0.946683,
+          "d_prime": 0.994387,
+          "p_target_if_proxy": 0.963415,
+          "p_target_if_other": 0.001316
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs13003464",
+      "group": "core",
+      "gene": "REL",
+      "risk_allele": "G",
+      "weight": 0.157,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs67927699",
+          "proxy_risk_allele": "C",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7596362",
+          "proxy_risk_allele": "C",
+          "r2": 0.995707,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.99726,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs11875687",
+      "group": "core",
+      "gene": "PTPN2",
+      "risk_allele": "C",
+      "weight": 0.157,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs612058",
+          "proxy_risk_allele": "T",
+          "r2": 0.991611,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.001151
+        },
+        {
+          "id": "rs579052",
+          "proxy_risk_allele": "T",
+          "r2": 0.991611,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.001151
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs12068671",
+      "group": "core",
+      "gene": "FASLG",
+      "risk_allele": "C",
+      "weight": -0.151,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs10912292",
+          "proxy_risk_allele": "T",
+          "r2": 0.993743,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.001238
+        },
+        {
+          "id": "rs7553067",
+          "proxy_risk_allele": "T",
+          "r2": 0.987499,
+          "d_prime": 0.99373,
+          "p_target_if_proxy": 0.994975,
+          "p_target_if_other": 0.001239
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1250552",
+      "group": "core",
+      "gene": "ZMIZ1",
+      "risk_allele": "G",
+      "weight": -0.151,
+      "haplotype": null,
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs10892258",
+      "group": "core",
+      "gene": "DDX6",
+      "risk_allele": "A",
+      "weight": -0.151,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs10892260",
+          "proxy_risk_allele": "C",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs10790261",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1018326",
+      "group": "core",
+      "gene": "UBE2E3",
+      "risk_allele": "C",
+      "weight": 0.148,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs6744620",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs13405121",
+          "proxy_risk_allele": "A",
+          "r2": 0.96815,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.013962
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs182429",
+      "group": "core",
+      "gene": "TAGAP",
+      "risk_allele": "A",
+      "weight": 0.148,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs212410",
+          "proxy_risk_allele": "C",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs212411",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs7104791",
+      "group": "core",
+      "gene": "POU2AF1",
+      "risk_allele": "T",
+      "weight": 0.148,
+      "haplotype": null,
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs4821124",
+      "group": "core",
+      "gene": "UBE2L3",
+      "risk_allele": "C",
+      "weight": 0.148,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs5998509",
+          "proxy_risk_allele": "T",
+          "r2": 0.98684,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.002433
+        },
+        {
+          "id": "rs4821104",
+          "proxy_risk_allele": "G",
+          "r2": 0.98684,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.002433
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs4445406",
+      "group": "core",
+      "gene": "MMEL1",
+      "risk_allele": "C",
+      "weight": -0.139,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs4074789",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs10797439",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs12142280",
+      "group": "core",
+      "gene": "FASLG",
+      "risk_allele": "A",
+      "weight": -0.139,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs11801183",
+          "proxy_risk_allele": "T",
+          "r2": 0.993357,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.994565,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs112124189",
+          "proxy_risk_allele": "T",
+          "r2": 0.953725,
+          "d_prime": 0.979849,
+          "p_target_if_proxy": 0.978261,
+          "p_target_if_other": 0.00365
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs6498114",
+      "group": "core",
+      "gene": "CIITA",
+      "risk_allele": "G",
+      "weight": 0.131,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs7501204",
+          "proxy_risk_allele": "C",
+          "r2": 0.967968,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.007833
+        },
+        {
+          "id": "rs12922863",
+          "proxy_risk_allele": "A",
+          "r2": 0.967828,
+          "d_prime": 0.989105,
+          "p_target_if_proxy": 0.991803,
+          "p_target_if_other": 0.005249
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1353248",
+      "group": "core",
+      "gene": "IL12A",
+      "risk_allele": "T",
+      "weight": -0.128,
+      "haplotype": null,
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs2387397",
+      "group": "core",
+      "gene": "PRKCQ",
+      "risk_allele": "G",
+      "weight": -0.128,
+      "haplotype": null,
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1893592",
+      "group": "core",
+      "gene": "UBASH3A",
+      "risk_allele": "C",
+      "weight": -0.128,
+      "haplotype": null,
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs11851414",
+      "group": "core",
+      "gene": "ZFP36L1",
+      "risk_allele": "C",
+      "weight": 0.122,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs1051533",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs11847049",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1378938",
+      "group": "core",
+      "gene": "CSK",
+      "risk_allele": "T",
+      "weight": 0.122,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs7085",
+          "proxy_risk_allele": "T",
+          "r2": 0.990846,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.002903
+        },
+        {
+          "id": "rs11634474",
+          "proxy_risk_allele": "C",
+          "r2": 0.981748,
+          "d_prime": 0.995383,
+          "p_target_if_proxy": 0.990654,
+          "p_target_if_other": 0.00146
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs10800746",
+      "group": "core",
+      "gene": "C1orf106",
+      "risk_allele": "T",
+      "weight": -0.117,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs905634",
+          "proxy_risk_allele": "T",
+          "r2": 0.952678,
+          "d_prime": 0.985423,
+          "p_target_if_proxy": 0.976589,
+          "p_target_if_other": 0.004243
+        },
+        {
+          "id": "rs7522462",
+          "proxy_risk_allele": "A",
+          "r2": 0.911239,
+          "d_prime": 0.999998,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.026027
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1050976",
+      "group": "core",
+      "gene": "IRF4",
+      "risk_allele": "T",
+      "weight": -0.117,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9391997",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs1050979",
+          "proxy_risk_allele": "G",
+          "r2": 0.992036,
+          "d_prime": 0.99601,
+          "p_target_if_proxy": 0.997908,
+          "p_target_if_other": 0.001894
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs7616215",
+      "group": "core",
+      "gene": "CCR3",
+      "risk_allele": "C",
+      "weight": 0.113,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs2172247",
+          "proxy_risk_allele": "T",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2087726",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs2561288",
+      "group": "core",
+      "gene": "IL12A",
+      "risk_allele": "T",
+      "weight": 0.113,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9832199",
+          "proxy_risk_allele": "A",
+          "r2": 0.992034,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.995708,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs671046",
+          "proxy_risk_allele": "A",
+          "r2": 0.992034,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.995708,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs61579022",
+      "group": "core",
+      "gene": "ARHGAP31",
+      "risk_allele": "A",
+      "weight": 0.104,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs62266700",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs11712165",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs10167650",
+      "group": "core",
+      "gene": "PLEK",
+      "risk_allele": "G",
+      "weight": -0.083,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs12468278",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7424172",
+          "proxy_risk_allele": "C",
+          "r2": 0.995069,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.001377
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs17849502",
+      "group": "research",
+      "gene": "NCF2",
+      "risk_allele": "T",
+      "weight": 0.358,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs17849501",
+          "proxy_risk_allele": "T",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs41272536",
+          "proxy_risk_allele": "G",
+          "r2": 0.946997,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.003161
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "research-extension"
+    },
+    {
+      "target": "rs6806528",
+      "group": "research",
+      "gene": "FRMD4B",
+      "risk_allele": "T",
+      "weight": 0.174,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs34263064",
+          "proxy_risk_allele": "C",
+          "r2": 0.989467,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.990566,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs6781739",
+          "proxy_risk_allele": "A",
+          "r2": 0.989467,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.990566,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "research-extension"
+    },
+    {
+      "target": "rs2364484",
+      "group": "research",
+      "gene": "LTBR region",
+      "risk_allele": "C",
+      "weight": 0.122,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs12425441",
+          "proxy_risk_allele": "A",
+          "r2": 0.979751,
+          "d_prime": 0.994871,
+          "p_target_if_proxy": 0.996255,
+          "p_target_if_other": 0.00406
+        },
+        {
+          "id": "rs10774430",
+          "proxy_risk_allele": "T",
+          "r2": 0.969688,
+          "d_prime": 0.984727,
+          "p_target_if_proxy": 0.988848,
+          "p_target_if_other": 0.004071
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "research-extension"
+    },
+    {
+      "target": "rs9610686",
+      "group": "research",
+      "gene": "RAC2 / CYTH4",
+      "risk_allele": "C",
+      "weight": 0.104,
+      "haplotype": null,
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs5995404",
+          "proxy_risk_allele": "T",
+          "r2": 0.98751,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.007673
+        },
+        {
+          "id": "rs4821614",
+          "proxy_risk_allele": "A",
+          "r2": 0.983297,
+          "d_prime": 0.995778,
+          "p_target_if_proxy": 0.998377,
+          "p_target_if_other": 0.007692
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "research-extension"
+    },
+    {
+      "target": "rs2187668",
+      "group": "hla",
+      "gene": "HLA-DQA1",
+      "risk_allele": "T",
+      "weight": null,
+      "haplotype": "DQ2.5",
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9272729",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.962617,
+          "p_target_if_other": 0.004449
+        },
+        {
+          "id": "rs9272139",
+          "proxy_risk_allele": "A",
+          "r2": 0.979172,
+          "d_prime": 0.989531,
+          "p_target_if_proxy": 0.990654,
+          "p_target_if_other": 0.001112
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1617322",
+      "group": "hla",
+      "gene": "HLA-DQB1",
+      "risk_allele": "A",
+      "weight": null,
+      "haplotype": "DQ2.5",
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs2647044",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs1794277",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs7454108",
+      "group": "hla",
+      "gene": "HLA-DQB1",
+      "risk_allele": "C",
+      "weight": null,
+      "haplotype": "DQ8",
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs3957146",
+      "group": "hla",
+      "gene": "HLA-DQB1",
+      "risk_allele": "C",
+      "weight": null,
+      "haplotype": "DQ8",
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9275387",
+          "proxy_risk_allele": "C",
+          "r2": 0.989378,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.990476,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs9275214",
+          "proxy_risk_allele": "A",
+          "r2": 0.989378,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.990476,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs1049124",
+      "group": "hla",
+      "gene": "HLA-DQA1",
+      "risk_allele": "A",
+      "weight": null,
+      "haplotype": "DQ2.2",
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs2133037",
+          "proxy_risk_allele": "A",
+          "r2": 0.988809,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.989796,
+          "p_target_if_other": 0.002203
+        },
+        {
+          "id": "rs17211713",
+          "proxy_risk_allele": "C",
+          "r2": 0.988809,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.969388,
+          "p_target_if_other": 0.004405
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs7775228",
+      "group": "hla",
+      "gene": "HLA-DQB1",
+      "risk_allele": "C",
+      "weight": null,
+      "haplotype": "DQ2.2",
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs3129715",
+          "proxy_risk_allele": "T",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2858327",
+          "proxy_risk_allele": "G",
+          "r2": 0.992614,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.993789,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs73405471",
+      "group": "hla",
+      "gene": "HLA-DQA1",
+      "risk_allele": "T",
+      "weight": null,
+      "haplotype": "DQ7.5",
+      "automatic_proxy": true,
+      "proxies": [
+        {
+          "id": "rs9469199",
+          "proxy_risk_allele": "A",
+          "r2": 0.981413,
+          "d_prime": 0.990663,
+          "p_target_if_proxy": 0.991803,
+          "p_target_if_other": 0.001131
+        }
+      ],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    },
+    {
+      "target": "rs79550239",
+      "group": "hla",
+      "gene": "HLA-DQB1",
+      "risk_allele": "A",
+      "weight": null,
+      "haplotype": "DQ7.5",
+      "automatic_proxy": false,
+      "proxies": [],
+      "chip_availability": {
+        "23andMe": "runtime-detected",
+        "MyHeritage": "runtime-detected",
+        "DNAERA": "runtime-detected"
+      },
+      "evidence_status": "published-core"
+    }
+  ]
+}

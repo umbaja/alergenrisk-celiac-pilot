@@ -22,7 +22,7 @@ flowchart TD
   J --> M
   M --> N[Metriky a modelové artefakty]
   N --> O[Validačná správa a dashboard]
-  N --> P[Integračný kontrakt pre AlergenRisk alebo obrazovú platformu]
+  N --> P[Samostatný GitHub Pages pilot a release balík]
 ```
 
 ## Kontrolné brány
@@ -33,4 +33,6 @@ flowchart TD
 4. **Performance gate:** reportujú sa všetky požadované metriky vrátane false-negative rate.
 5. **Interpretation gate:** syntetická fidelity sa nesmie označiť za klinickú validáciu.
 6. **Release gate:** model, manifest, dataset card, metriky a dokumentácia majú spoločnú verziu a kontrolné súčty.
+
+Produkčné prepojenie s externou obrazovou platformou je zámerne vynechané z tejto etapy. Verejným cieľom je samostatný auditovateľný GitHub Pages pilot.
 

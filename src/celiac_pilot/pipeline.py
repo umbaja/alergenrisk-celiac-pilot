@@ -245,6 +245,8 @@ def run_pipeline(
     metrics_path.parent.mkdir(parents=True, exist_ok=True)
     metrics_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     _write_markdown_report(result, root / "artifacts" / "reports" / "evaluation.md")
-    _write_site(result, root / "site" / "index.html")
+    site_metrics = root / "site" / "assets" / "evaluation.json"
+    site_metrics.parent.mkdir(parents=True, exist_ok=True)
+    site_metrics.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     return result
 

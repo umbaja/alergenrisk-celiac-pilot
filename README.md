@@ -8,7 +8,9 @@ Samostatný paralelný výskumný projekt k aplikácii AlergenRisk. Pôvodné po
 - porovnanie jednoduchého baseline, aditívneho modelu a modelu so štruktúrovanými HLA interakciami,
 - confusion matrix, precision, recall, F1, ROC-AUC, PR-AUC, false-negative rate a Brier score,
 - samostatné hodnotenie vysoko predisponovanej triedy s prahom zvoleným na validačnej množine,
-- dátovú a modelovú kartu, procesnú mapu, grantovú akceptačnú maticu a statický validačný dashboard.
+- lokálny výpočet zo surového genotypového exportu bez odosielania súboru,
+- verejný prehliadač syntetických dát a audit 50 cieľových SNP s proxy katalógom,
+- dátovú a modelovú kartu, štyri formálne PDF výstupy, procesnú mapu a grantovú akceptačnú maticu.
 
 ## Dôležité metodické rozlíšenie
 
@@ -29,9 +31,13 @@ HLA diplotyp je jediná biologicky štruktúrovaná neaditívna vrstva. Dodatoč
 ## Spustenie
 
 ```powershell
-python -m pip install -e .
+python -m pip install -r requirements-lock.txt
+python -m pip install -e . --no-deps
 python scripts/run_pipeline.py --samples 12000 --seed 20261014
+python scripts/build_release_assets.py
+python scripts/build_pdfs.py
 python -m unittest discover -s tests -v
+node --test tests/web_app.test.mjs
 ```
 
 Pipeline vytvorí:
@@ -41,13 +47,25 @@ Pipeline vytvorí:
 - `artifacts/models/*.npz`,
 - `artifacts/metrics/evaluation.json`,
 - `artifacts/reports/evaluation.md`,
-- `site/index.html`.
+- `site/assets/*.json`,
+- `site/downloads/*`,
+- `output/pdf/*.pdf`.
 
 ## Repozitár a nasadenie
 
 Workflow `validate.yml` reprodukuje testy a validačný beh. Workflow `pages.yml` publikuje statický dashboard zo `site/` bez zmeny pôvodného webu AlergenRisk.
 
+- Verejná aplikácia: https://umbaja.github.io/alergenrisk-celiac-pilot/
+- Lokálny výpočet: https://umbaja.github.io/alergenrisk-celiac-pilot/calculator.html
+- Prehliadač dát: https://umbaja.github.io/alergenrisk-celiac-pilot/data.html
+- SNP/proxy audit: https://umbaja.github.io/alergenrisk-celiac-pilot/audit.html
+- Dokumentácia: https://umbaja.github.io/alergenrisk-celiac-pilot/docs.html
+
+Projekt zámerne nepoužíva Railway ani inú aplikačnú serverovú službu. Produkčné prepojenie s externou platformou je v tejto etape vynechané; pilot zostáva samostatným GitHub Pages projektom.
+
 Kľúčové auditné dokumenty sú v `docs/dataset-card.md`, `docs/model-card.md`, `docs/process-map.md`, `docs/grant-acceptance-matrix.md` a `docs/integration-contract.md`.
+
+Pred vytvorením nemenného release musí vlastník projektu zvoliť licenciu. Kým sa tak nestane, repozitár neposkytuje automatický grant práv na ďalšie použitie.
 
 ## Zdroje
 

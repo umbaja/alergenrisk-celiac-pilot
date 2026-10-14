@@ -1,37 +1,56 @@
 <!doctype html>
-<html lang="sk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AlergenRisk Celiac Pilot</title>
-<style>
-:root{--bg:#f4f9fb;--ink:#2f3e45;--muted:#60717a;--blue:#2f8ab7;--dark:#2b6680;--line:#cedde3;--soft:#e8f3f7;--mint:#ddefea}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif;line-height:1.48}
-main{max-width:1120px;margin:auto;padding:34px 22px 70px}header{border-top:1px solid var(--line);padding-top:34px;position:relative}
-.brand{color:var(--dark);font-size:.78rem;font-weight:800;letter-spacing:.08em}.eyebrow{color:var(--blue);font-weight:800;font-size:.78rem;margin-top:42px}
-h1{font-size:clamp(2.4rem,7vw,5.5rem);line-height:.95;margin:12px 0 20px;letter-spacing:-.055em}h1 span{color:var(--blue)}
-.lead{font-size:1.15rem;color:var(--muted);max-width:760px}.notice{margin:28px 0;padding:18px 20px;background:var(--dark);color:white}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}.card{background:white;border:1px solid var(--line);padding:20px}
-.card small{color:var(--dark);font-weight:800}.value{font-size:2rem;font-weight:800;margin-top:7px}h2{color:var(--dark);font-size:1.7rem;margin-top:45px}
-table{width:100%;border-collapse:collapse;background:white;font-size:.9rem}th{background:var(--dark);color:white;text-align:left}th,td{padding:10px;border:1px solid var(--line)}tr:nth-child(even){background:var(--soft)}
-.flow{background:var(--mint);border:1px solid #9dcbbd;padding:20px;font-family:Consolas,monospace;white-space:pre-wrap}footer{margin-top:54px;padding-top:14px;border-top:2px solid var(--blue);color:var(--muted);font-size:.8rem}
-@media(max-width:760px){.grid{grid-template-columns:1fr}table{font-size:.75rem}th,td{padding:7px}}
-</style></head><body><main><header><div class="brand">NU3GEN / ALERGENRISK / PARALELNÝ VÝSKUMNÝ PILOT</div>
-<div class="eyebrow">CELIAKIA · ALGORITHMIC FIDELITY / 2026</div><h1>Celiac <span>Pilot</span></h1>
-<p class="lead">Reprodukovateľný syntetický dataset, modelový register a porovnávacia ML validácia celiakálneho panelu AlergenRisk.</p></header>
-<div class="notice"><strong>Výskumné obmedzenie:</strong> výsledky dokazujú zhodu AI s definovaným genetickým oracle. Nie sú klinickou validáciou ani diagnostickou presnosťou.</div>
-<section class="grid"><div class="card"><small>SYNTETICKÉ PRÍPADY</small><div class="value">12,000</div></div>
-<div class="card"><small>REFERENČNÉ MARKERY</small><div class="value">50</div></div>
-<div class="card"><small>NAJLEPŠÍ MODEL</small><div class="value">structured</div></div></section>
-<section class="grid"><div class="card"><small>MACRO F1</small><div class="value">0.880</div></div>
-<div class="card"><small>HIGH RECALL</small><div class="value">95.0%</div></div>
-<div class="card"><small>FALSE NEGATIVE RATE</small><div class="value">5.0%</div></div></section>
-<h2>Komparatívna analýza</h2><table><thead><tr><th>Model</th><th>Príznaky</th><th>Accuracy</th><th>Macro F1</th><th>High recall</th><th>High precision</th><th>FN rate</th><th>ROC-AUC</th></tr></thead><tbody><tr><td><strong>baseline</strong></td><td>5</td><td>70.5%</td><td>0.515</td><td>100.0%</td><td>20.0%</td><td>0.0%</td><td>0.882</td></tr><tr><td><strong>additive</strong></td><td>105</td><td>85.7%</td><td>0.843</td><td>94.8%</td><td>57.6%</td><td>5.2%</td><td>0.963</td></tr><tr><td><strong>structured</strong></td><td>111</td><td>89.2%</td><td>0.880</td><td>95.0%</td><td>71.0%</td><td>5.0%</td><td>0.980</td></tr></tbody></table>
-<h2>Procesná mapa</h2><div class="flow">vedecké zdroje
-  -> verzovaný modelový register
-  -> referenčný oracle a EUR hranice
-  -> syntetické genotypy + čipové stresové profily
-  -> stratifikovaný train / validation / test
-  -> baseline / additive / structured model
-  -> výber prahu na validation
-  -> jednorazové test hodnotenie
-  -> metriky, modelové artefakty a integračný kontrakt</div>
-<h2>Reprodukovateľnosť</h2><p>Model <strong>alergenrisk-celiac-pilot-v1</strong>, verzia 0.1.0; seed 20261014. EUR/CEU hranice: q20 1.20, q80 4.06.</p>
-<footer>NU3GEN / ALERGENRISK CELIAC PILOT · výskumný a grantový validačný výstup · bez klinických tvrdení</footer></main></body></html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Reprodukovateľný výskumný pilot celiakálneho panelu AlergenRisk.">
+  <title>AlergenRisk Celiac Pilot</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">NU3GEN <span>/ ALERGENRISK</span></a>
+    <nav aria-label="Hlavná navigácia">
+      <a aria-current="page" href="index.html">Prehľad</a><a href="calculator.html">Výpočet</a>
+      <a href="data.html">Dáta</a><a href="audit.html">SNP audit</a><a href="docs.html">Dokumentácia</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PARALELNÝ VÝSKUMNÝ PILOT / V1</p>
+      <h1>Celiac <span>Pilot</span></h1>
+      <p class="lead">Auditovateľný polygénny model celiakálnej predispozície so syntetickým datasetom, transparentným skóre a výskumnou ML validáciou.</p>
+      <div class="actions"><a class="button primary" href="calculator.html">Otvoriť výpočet</a><a class="button" href="data.html">Prezrieť dáta</a></div>
+    </section>
+    <aside class="notice"><strong>Výskumné obmedzenie.</strong> Výsledok vyjadruje relatívnu genetickú predispozíciu a zhodu modelu s definovanou logikou. Nie je diagnózou ani klinickou pravdepodobnosťou ochorenia.</aside>
+    <section class="stat-grid" aria-label="Súhrn pilotu">
+      <article class="stat"><small>SYNTETICKÉ PRÍPADY</small><strong>12 000</strong><span>train / validation / test</span></article>
+      <article class="stat"><small>CIEĽOVÉ MARKERY</small><strong>50</strong><span>42 GRS + 8 HLA tagov</span></article>
+      <article class="stat"><small>ML PRÍZNAKY</small><strong>111</strong><span>pozorovania, kvalita, profil, interakcie</span></article>
+    </section>
+    <section class="section-grid">
+      <div>
+        <p class="eyebrow">ČO JE DOKONČENÉ</p><h2>Od registra po auditný výstup</h2>
+        <p>Každý výsledok sa dá spätne priradiť k verzii modelu, vstupnému markeru, zdroju hodnoty a použitej rozhodovacej hranici.</p>
+      </div>
+      <ol class="steps">
+        <li><b>01</b><span><strong>Verzovaný register</strong>Váhy, efektové alely a HLA logika v strojovo čitateľnom JSON.</span></li>
+        <li><b>02</b><span><strong>Anotované dáta</strong>217 stĺpcov s pôvodom direct, proxy alebo population.</span></li>
+        <li><b>03</b><span><strong>Komparatívna validácia</strong>Baseline, additive a structured model na fixných splitoch.</span></li>
+        <li><b>04</b><span><strong>Audit a dokumentácia</strong>Kontrolné súčty, metodické PDF a verejné dátové rozhranie.</span></li>
+      </ol>
+    </section>
+    <section>
+      <div class="section-heading"><div><p class="eyebrow">TESTOVACIA MNOŽINA</p><h2>Komparatívne výsledky</h2></div><a href="docs.html">Metodika a správy →</a></div>
+      <div class="table-wrap"><table><thead><tr><th>Model</th><th>Príznaky</th><th>Accuracy</th><th>Macro F1</th><th>High recall</th><th>High precision</th><th>FN rate</th><th>ROC-AUC</th></tr></thead><tbody>
+        <tr><td>baseline</td><td>5</td><td>70,5 %</td><td>0,515</td><td>100,0 %</td><td>20,0 %</td><td>0,0 %</td><td>0,882</td></tr>
+        <tr><td>additive</td><td>105</td><td>85,7 %</td><td>0,843</td><td>94,8 %</td><td>57,6 %</td><td>5,2 %</td><td>0,963</td></tr>
+        <tr class="highlight"><td><strong>structured</strong></td><td>111</td><td>89,2 %</td><td>0,880</td><td>95,0 %</td><td>71,0 %</td><td>5,0 %</td><td>0,980</td></tr>
+      </tbody></table></div>
+      <p class="caption">Metriky dokazujú algoritmickú vernosť na syntetických dátach. Nepredstavujú klinickú výkonnosť.</p>
+    </section>
+    <section class="flow-section"><p class="eyebrow">PROCESNÁ MAPA</p><div class="flow"><span>Zdroje a register</span><i>→</i><span>Syntetické genotypy</span><i>→</i><span>Fixné datasety</span><i>→</i><span>3 modely</span><i>→</i><span>Test a audit</span></div></section>
+  </main>
+  <footer><span>NU3GEN / ALERGENRISK CELIAC PILOT</span><span>Výskumný výstup · bez klinických tvrdení</span></footer>
+</body>
+</html>

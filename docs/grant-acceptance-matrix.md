@@ -13,8 +13,10 @@
 | ROC-AUC a PR-AUC | binárne pre high-risk triedu | splnené |
 | Minimalizácia false negatives | validačný výber prahu s cieľovým recall | splnené na syntetickej fidelity úrovni |
 | Komparatívna analýza | baseline vs additive vs structured | splnené |
-| Technická dokumentácia pipeline | README, procesná mapa a zdrojový kód | splnené |
-| Produkčný AI model | exportované `.npz` artefakty | pilotne splnené |
-| Prepojenie s obrazovou platformou | zatiaľ iba plánovaný integračný kontrakt | otvorené |
+| Technická dokumentácia pipeline | README, 4 PDF, procesná mapa a zdrojový kód | splnené |
+| Produkčný AI model | exportované `.npz` a browser JSON artefakty | pilotne splnené |
+| Verejný dátový výstup | GitHub Pages prehliadač, dátový slovník a súbory na stiahnutie | splnené |
+| Lokálny výpočet | browser parser, direct/proxy/population audit a JSON export | splnené |
+| Prepojenie s obrazovou platformou | bod 6 zámerne vynechaný podľa zadania | mimo rozsahu tejto etapy |
 | Klinická validácia | vyžaduje nezávislú fenotypovanú kohortu | mimo syntetického pilotu |
 
