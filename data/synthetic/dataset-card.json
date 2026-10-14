@@ -1,0 +1,28 @@
+{
+  "dataset_id": "alergenrisk-celiac-synthetic-v1",
+  "rows": 12000,
+  "columns": 217,
+  "classes": {
+    "typical": 7138,
+    "low": 2458,
+    "high": 2404
+  },
+  "splits": {
+    "train": 7198,
+    "validation": 2401,
+    "test": 2401
+  },
+  "profiles": {
+    "23andme_like": 3034,
+    "complete": 2434,
+    "dnaera_like": 2410,
+    "myheritage_like": 2374,
+    "sparse_stress": 1748
+  },
+  "manifest_sha256": "87c607a0805b8729284a39ff73637b37be846ed3dfea09bb4b40ea89e6baeb59",
+  "synthetic_only": true,
+  "contains_personal_data": false,
+  "clinical_validation": false,
+  "purpose": "Algorithmic-fidelity training and evaluation",
+  "simulation_disclaimer": "Chip-profile call rates and proxy recovery rates are synthetic stress-test assumptions, not measured vendor performance."
+}

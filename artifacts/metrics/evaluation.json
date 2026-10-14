@@ -1,0 +1,237 @@
+{
+  "report_type": "algorithmic-fidelity-evaluation",
+  "clinical_validation": false,
+  "model_id": "alergenrisk-celiac-pilot-v1",
+  "model_version": "0.1.0",
+  "manifest_sha256": "87c607a0805b8729284a39ff73637b37be846ed3dfea09bb4b40ea89e6baeb59",
+  "seed": 20261014,
+  "reference": {
+    "low_cut": 1.2,
+    "high_cut": 4.06,
+    "population": "EUR/CEU model"
+  },
+  "dataset": {
+    "rows": 12000,
+    "columns": 217,
+    "sha256": "bba1ff01636b5eed3f71ec5730d28d31940b5aed6e6b52a43eb2ac56bdd2388f",
+    "class_distribution": {
+      "typical": 7138,
+      "low": 2458,
+      "high": 2404
+    },
+    "split_distribution": {
+      "train": 7198,
+      "validation": 2401,
+      "test": 2401
+    }
+  },
+  "models": {
+    "baseline": {
+      "feature_count": 5,
+      "high_threshold_selection_on_validation": {
+        "threshold": 0.04,
+        "recall": 1.0,
+        "precision": 0.2003331945022907
+      },
+      "test": {
+        "samples": 2401,
+        "accuracy": 0.7051228654727197,
+        "macro_f1": 0.5145858409682931,
+        "multiclass_log_loss": 0.6937941415139203,
+        "confusion_matrix": [
+          [
+            0,
+            482,
+            10
+          ],
+          [
+            0,
+            1357,
+            71
+          ],
+          [
+            0,
+            145,
+            336
+          ]
+        ],
+        "per_class": {
+          "low": {
+            "support": 492,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "typical": {
+            "support": 1428,
+            "precision": 0.6839717741935484,
+            "recall": 0.9502801120448179,
+            "f1": 0.7954279015240329
+          },
+          "high": {
+            "support": 481,
+            "precision": 0.8057553956834532,
+            "recall": 0.6985446985446986,
+            "f1": 0.7483296213808464
+          }
+        },
+        "high_risk": {
+          "threshold": 0.04,
+          "tp": 481,
+          "tn": 0,
+          "fp": 1920,
+          "fn": 0,
+          "precision": 0.2003331945022907,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "false_negative_rate": 0.0,
+          "f1": 0.33379597501734903,
+          "roc_auc": 0.8820280015592515,
+          "pr_auc": 0.7231968166793928,
+          "brier": 0.0817827620584449
+        }
+      },
+      "artifact": "artifacts\\models\\baseline.npz"
+    },
+    "additive": {
+      "feature_count": 105,
+      "high_threshold_selection_on_validation": {
+        "threshold": 0.12000000000000001,
+        "recall": 0.9501039501039501,
+        "precision": 0.557997557997558
+      },
+      "test": {
+        "samples": 2401,
+        "accuracy": 0.8571428571428571,
+        "macro_f1": 0.842966874383681,
+        "multiclass_log_loss": 0.36627418864961037,
+        "confusion_matrix": [
+          [
+            404,
+            88,
+            0
+          ],
+          [
+            65,
+            1251,
+            112
+          ],
+          [
+            1,
+            77,
+            403
+          ]
+        ],
+        "per_class": {
+          "low": {
+            "support": 492,
+            "precision": 0.8595744680851064,
+            "recall": 0.8211382113821138,
+            "f1": 0.83991683991684
+          },
+          "typical": {
+            "support": 1428,
+            "precision": 0.8834745762711864,
+            "recall": 0.8760504201680672,
+            "f1": 0.8797468354430379
+          },
+          "high": {
+            "support": 481,
+            "precision": 0.7825242718446602,
+            "recall": 0.8378378378378378,
+            "f1": 0.8092369477911647
+          }
+        },
+        "high_risk": {
+          "threshold": 0.12000000000000001,
+          "tp": 456,
+          "tn": 1584,
+          "fp": 336,
+          "fn": 25,
+          "precision": 0.5757575757575758,
+          "recall": 0.9480249480249481,
+          "specificity": 0.825,
+          "false_negative_rate": 0.05197505197505198,
+          "f1": 0.7164179104477614,
+          "roc_auc": 0.9633879071379071,
+          "pr_auc": 0.8822690613826052,
+          "brier": 0.058599278083052334
+        }
+      },
+      "artifact": "artifacts\\models\\additive.npz"
+    },
+    "structured": {
+      "feature_count": 111,
+      "high_threshold_selection_on_validation": {
+        "threshold": 0.13,
+        "recall": 0.9542619542619543,
+        "precision": 0.7039877300613497
+      },
+      "test": {
+        "samples": 2401,
+        "accuracy": 0.8917117867555185,
+        "macro_f1": 0.8795110574739621,
+        "multiclass_log_loss": 0.2957882832074357,
+        "confusion_matrix": [
+          [
+            411,
+            81,
+            0
+          ],
+          [
+            62,
+            1308,
+            58
+          ],
+          [
+            2,
+            57,
+            422
+          ]
+        ],
+        "per_class": {
+          "low": {
+            "support": 492,
+            "precision": 0.8652631578947368,
+            "recall": 0.8353658536585366,
+            "f1": 0.8500517063081696
+          },
+          "typical": {
+            "support": 1428,
+            "precision": 0.9045643153526971,
+            "recall": 0.9159663865546218,
+            "f1": 0.9102296450939457
+          },
+          "high": {
+            "support": 481,
+            "precision": 0.8791666666666667,
+            "recall": 0.8773388773388774,
+            "f1": 0.8782518210197712
+          }
+        },
+        "high_risk": {
+          "threshold": 0.13,
+          "tp": 457,
+          "tn": 1733,
+          "fp": 187,
+          "fn": 24,
+          "precision": 0.7096273291925466,
+          "recall": 0.9501039501039501,
+          "specificity": 0.9026041666666667,
+          "false_negative_rate": 0.0498960498960499,
+          "f1": 0.8124444444444444,
+          "roc_auc": 0.9804129851004851,
+          "pr_auc": 0.9451160741242529,
+          "brier": 0.03744656487302438
+        }
+      },
+      "artifact": "artifacts\\models\\structured.npz"
+    }
+  },
+  "limitations": [
+    "Synthetic labels reproduce a deterministic genetic oracle.",
+    "Metrics are not clinical sensitivity, specificity, or disease-prediction AUC.",
+    "Chip profiles are stress-test assumptions, not measured vendor performance.",
+    "External evaluation on an independently phenotyped cohort is required for clinical claims."
+  ]
+}
