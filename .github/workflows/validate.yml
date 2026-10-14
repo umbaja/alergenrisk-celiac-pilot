@@ -1,4 +1,4 @@
-name: Validate celiac pilot
+name: Validate AlergenRisk research pilot
 
 on:
   push:
@@ -17,8 +17,10 @@ jobs:
       - run: python -m pip install -e .
       - run: python -m unittest discover -s tests -v
       - run: python scripts/run_pipeline.py --samples 3000 --seed 20261014 --training-steps 500
+      - run: python scripts/run_multitrait_pipeline.py --samples-per-trait 1800 --seed 20261014 --training-steps 400
+      - run: python scripts/build_multitrait_assets.py
       - run: python scripts/build_release_assets.py
-      - run: node --test tests/web_app.test.mjs
+      - run: node --test tests/web_app.test.mjs tests/multitrait_web.test.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: celiac-pilot-validation
@@ -26,5 +28,7 @@ jobs:
             artifacts/metrics/evaluation.json
             artifacts/reports/evaluation.md
             site/assets/evaluation.json
+            artifacts/multitrait/evaluation.json
+            site/assets/multitrait-evaluation.json
             artifacts/release-manifest.json
 

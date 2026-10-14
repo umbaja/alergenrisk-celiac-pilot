@@ -1,0 +1,884 @@
+{
+  "egg": [
+    {
+      "column": "sample_id",
+      "type": "derived",
+      "description": "Syntetický identifikátor bez väzby na skutočnú osobu."
+    },
+    {
+      "column": "trait_id",
+      "type": "derived",
+      "description": "Identifikátor hodnoteného znaku."
+    },
+    {
+      "column": "generation_seed",
+      "type": "derived",
+      "description": "Seed deterministického generátora."
+    },
+    {
+      "column": "chip_profile",
+      "type": "derived",
+      "description": "Syntetický stresový profil pokrytia; nejde o meranie komerčného čipu."
+    },
+    {
+      "column": "true_rs12123821",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs12123821",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs12123821",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs12123821",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs11949166",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs11949166",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs11949166",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs11949166",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs2212434",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs2212434",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs2212434",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs2212434",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs1243064",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs1243064",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs1243064",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs1243064",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "oracle_genetic_score",
+      "type": "derived",
+      "description": "Celý počet efektových alel 0 až 2 na lokus."
+    },
+    {
+      "column": "oracle_weighted_score",
+      "type": "derived",
+      "description": "Agregovaný súčet dávka krát publikovaná alebo deklarovaná váha."
+    },
+    {
+      "column": "observed_integer_score",
+      "type": "derived",
+      "description": "Celý počet alel zistených priamo alebo cez proxy; chýbajúce lokusy nepridávajú body."
+    },
+    {
+      "column": "oracle_class",
+      "type": "derived",
+      "description": "Číselný kód triedy syntetického oracle."
+    },
+    {
+      "column": "oracle_label",
+      "type": "derived",
+      "description": "Textová trieda syntetického oracle."
+    },
+    {
+      "column": "direct_count",
+      "type": "derived",
+      "description": "Počet priamo zistených cieľov."
+    },
+    {
+      "column": "proxy_count",
+      "type": "derived",
+      "description": "Počet cieľov odvodených auditovanou proxy."
+    },
+    {
+      "column": "population_imputed_count",
+      "type": "derived",
+      "description": "Počet numerických populačných očakávaní použitých iba pre ML príznaky."
+    },
+    {
+      "column": "missing_count",
+      "type": "derived",
+      "description": "Počet chýbajúcich cieľov bez populačnej imputácie."
+    },
+    {
+      "column": "coverage_fraction",
+      "type": "derived",
+      "description": "Podiel cieľov zistených priamo alebo cez proxy."
+    },
+    {
+      "column": "split",
+      "type": "derived",
+      "description": "Fixné rozdelenie train, validation alebo test."
+    }
+  ],
+  "peanut": [
+    {
+      "column": "sample_id",
+      "type": "derived",
+      "description": "Syntetický identifikátor bez väzby na skutočnú osobu."
+    },
+    {
+      "column": "trait_id",
+      "type": "derived",
+      "description": "Identifikátor hodnoteného znaku."
+    },
+    {
+      "column": "generation_seed",
+      "type": "derived",
+      "description": "Seed deterministického generátora."
+    },
+    {
+      "column": "chip_profile",
+      "type": "derived",
+      "description": "Syntetický stresový profil pokrytia; nejde o meranie komerčného čipu."
+    },
+    {
+      "column": "true_rs7192",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs7192",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs7192",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs7192",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs9275596",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs9275596",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs9275596",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs9275596",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs7936434",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs7936434",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs7936434",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs7936434",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs7475217",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs7475217",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs7475217",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs7475217",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs744597",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs744597",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs744597",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs744597",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "oracle_genetic_score",
+      "type": "derived",
+      "description": "Celý počet efektových alel 0 až 2 na lokus."
+    },
+    {
+      "column": "oracle_weighted_score",
+      "type": "derived",
+      "description": "Agregovaný súčet dávka krát publikovaná alebo deklarovaná váha."
+    },
+    {
+      "column": "observed_integer_score",
+      "type": "derived",
+      "description": "Celý počet alel zistených priamo alebo cez proxy; chýbajúce lokusy nepridávajú body."
+    },
+    {
+      "column": "oracle_class",
+      "type": "derived",
+      "description": "Číselný kód triedy syntetického oracle."
+    },
+    {
+      "column": "oracle_label",
+      "type": "derived",
+      "description": "Textová trieda syntetického oracle."
+    },
+    {
+      "column": "direct_count",
+      "type": "derived",
+      "description": "Počet priamo zistených cieľov."
+    },
+    {
+      "column": "proxy_count",
+      "type": "derived",
+      "description": "Počet cieľov odvodených auditovanou proxy."
+    },
+    {
+      "column": "population_imputed_count",
+      "type": "derived",
+      "description": "Počet numerických populačných očakávaní použitých iba pre ML príznaky."
+    },
+    {
+      "column": "missing_count",
+      "type": "derived",
+      "description": "Počet chýbajúcich cieľov bez populačnej imputácie."
+    },
+    {
+      "column": "coverage_fraction",
+      "type": "derived",
+      "description": "Podiel cieľov zistených priamo alebo cez proxy."
+    },
+    {
+      "column": "split",
+      "type": "derived",
+      "description": "Fixné rozdelenie train, validation alebo test."
+    }
+  ],
+  "milk": [
+    {
+      "column": "sample_id",
+      "type": "derived",
+      "description": "Syntetický identifikátor bez väzby na skutočnú osobu."
+    },
+    {
+      "column": "trait_id",
+      "type": "derived",
+      "description": "Identifikátor hodnoteného znaku."
+    },
+    {
+      "column": "generation_seed",
+      "type": "derived",
+      "description": "Seed deterministického generátora."
+    },
+    {
+      "column": "chip_profile",
+      "type": "derived",
+      "description": "Syntetický stresový profil pokrytia; nejde o meranie komerčného čipu."
+    },
+    {
+      "column": "true_rs12123821",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs12123821",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs12123821",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs12123821",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs11949166",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs11949166",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs11949166",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs11949166",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs2212434",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs2212434",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs2212434",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs2212434",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs17616434",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs17616434",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs17616434",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs17616434",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs2069772",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs2069772",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs2069772",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs2069772",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "oracle_genetic_score",
+      "type": "derived",
+      "description": "Celý počet efektových alel 0 až 2 na lokus."
+    },
+    {
+      "column": "oracle_weighted_score",
+      "type": "derived",
+      "description": "Agregovaný súčet dávka krát publikovaná alebo deklarovaná váha."
+    },
+    {
+      "column": "observed_integer_score",
+      "type": "derived",
+      "description": "Celý počet alel zistených priamo alebo cez proxy; chýbajúce lokusy nepridávajú body."
+    },
+    {
+      "column": "oracle_class",
+      "type": "derived",
+      "description": "Číselný kód triedy syntetického oracle."
+    },
+    {
+      "column": "oracle_label",
+      "type": "derived",
+      "description": "Textová trieda syntetického oracle."
+    },
+    {
+      "column": "direct_count",
+      "type": "derived",
+      "description": "Počet priamo zistených cieľov."
+    },
+    {
+      "column": "proxy_count",
+      "type": "derived",
+      "description": "Počet cieľov odvodených auditovanou proxy."
+    },
+    {
+      "column": "population_imputed_count",
+      "type": "derived",
+      "description": "Počet numerických populačných očakávaní použitých iba pre ML príznaky."
+    },
+    {
+      "column": "missing_count",
+      "type": "derived",
+      "description": "Počet chýbajúcich cieľov bez populačnej imputácie."
+    },
+    {
+      "column": "coverage_fraction",
+      "type": "derived",
+      "description": "Podiel cieľov zistených priamo alebo cez proxy."
+    },
+    {
+      "column": "split",
+      "type": "derived",
+      "description": "Fixné rozdelenie train, validation alebo test."
+    }
+  ],
+  "shared": [
+    {
+      "column": "sample_id",
+      "type": "derived",
+      "description": "Syntetický identifikátor bez väzby na skutočnú osobu."
+    },
+    {
+      "column": "trait_id",
+      "type": "derived",
+      "description": "Identifikátor hodnoteného znaku."
+    },
+    {
+      "column": "generation_seed",
+      "type": "derived",
+      "description": "Seed deterministického generátora."
+    },
+    {
+      "column": "chip_profile",
+      "type": "derived",
+      "description": "Syntetický stresový profil pokrytia; nejde o meranie komerčného čipu."
+    },
+    {
+      "column": "true_rs12123821",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs12123821",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs12123821",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs12123821",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs11949166",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs11949166",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs11949166",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs11949166",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs2212434",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs2212434",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs2212434",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs2212434",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "oracle_genetic_score",
+      "type": "derived",
+      "description": "Celý počet efektových alel 0 až 2 na lokus."
+    },
+    {
+      "column": "oracle_weighted_score",
+      "type": "derived",
+      "description": "Agregovaný súčet dávka krát publikovaná alebo deklarovaná váha."
+    },
+    {
+      "column": "observed_integer_score",
+      "type": "derived",
+      "description": "Celý počet alel zistených priamo alebo cez proxy; chýbajúce lokusy nepridávajú body."
+    },
+    {
+      "column": "oracle_class",
+      "type": "derived",
+      "description": "Číselný kód triedy syntetického oracle."
+    },
+    {
+      "column": "oracle_label",
+      "type": "derived",
+      "description": "Textová trieda syntetického oracle."
+    },
+    {
+      "column": "direct_count",
+      "type": "derived",
+      "description": "Počet priamo zistených cieľov."
+    },
+    {
+      "column": "proxy_count",
+      "type": "derived",
+      "description": "Počet cieľov odvodených auditovanou proxy."
+    },
+    {
+      "column": "population_imputed_count",
+      "type": "derived",
+      "description": "Počet numerických populačných očakávaní použitých iba pre ML príznaky."
+    },
+    {
+      "column": "missing_count",
+      "type": "derived",
+      "description": "Počet chýbajúcich cieľov bez populačnej imputácie."
+    },
+    {
+      "column": "coverage_fraction",
+      "type": "derived",
+      "description": "Podiel cieľov zistených priamo alebo cez proxy."
+    },
+    {
+      "column": "split",
+      "type": "derived",
+      "description": "Fixné rozdelenie train, validation alebo test."
+    }
+  ],
+  "lactose": [
+    {
+      "column": "sample_id",
+      "type": "derived",
+      "description": "Syntetický identifikátor bez väzby na skutočnú osobu."
+    },
+    {
+      "column": "trait_id",
+      "type": "derived",
+      "description": "Identifikátor hodnoteného znaku."
+    },
+    {
+      "column": "generation_seed",
+      "type": "derived",
+      "description": "Seed deterministického generátora."
+    },
+    {
+      "column": "chip_profile",
+      "type": "derived",
+      "description": "Syntetický stresový profil pokrytia; nejde o meranie komerčného čipu."
+    },
+    {
+      "column": "true_rs4988235",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs4988235",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs4988235",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs4988235",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "oracle_genetic_score",
+      "type": "derived",
+      "description": "Celý počet efektových alel 0 až 2 na lokus."
+    },
+    {
+      "column": "oracle_weighted_score",
+      "type": "derived",
+      "description": "Agregovaný súčet dávka krát publikovaná alebo deklarovaná váha."
+    },
+    {
+      "column": "observed_integer_score",
+      "type": "derived",
+      "description": "Celý počet alel zistených priamo alebo cez proxy; chýbajúce lokusy nepridávajú body."
+    },
+    {
+      "column": "oracle_class",
+      "type": "derived",
+      "description": "Číselný kód triedy syntetického oracle."
+    },
+    {
+      "column": "oracle_label",
+      "type": "derived",
+      "description": "Textová trieda syntetického oracle."
+    },
+    {
+      "column": "direct_count",
+      "type": "derived",
+      "description": "Počet priamo zistených cieľov."
+    },
+    {
+      "column": "proxy_count",
+      "type": "derived",
+      "description": "Počet cieľov odvodených auditovanou proxy."
+    },
+    {
+      "column": "population_imputed_count",
+      "type": "derived",
+      "description": "Počet numerických populačných očakávaní použitých iba pre ML príznaky."
+    },
+    {
+      "column": "missing_count",
+      "type": "derived",
+      "description": "Počet chýbajúcich cieľov bez populačnej imputácie."
+    },
+    {
+      "column": "coverage_fraction",
+      "type": "derived",
+      "description": "Podiel cieľov zistených priamo alebo cez proxy."
+    },
+    {
+      "column": "split",
+      "type": "derived",
+      "description": "Fixné rozdelenie train, validation alebo test."
+    }
+  ],
+  "histamine": [
+    {
+      "column": "sample_id",
+      "type": "derived",
+      "description": "Syntetický identifikátor bez väzby na skutočnú osobu."
+    },
+    {
+      "column": "trait_id",
+      "type": "derived",
+      "description": "Identifikátor hodnoteného znaku."
+    },
+    {
+      "column": "generation_seed",
+      "type": "derived",
+      "description": "Seed deterministického generátora."
+    },
+    {
+      "column": "chip_profile",
+      "type": "derived",
+      "description": "Syntetický stresový profil pokrytia; nejde o meranie komerčného čipu."
+    },
+    {
+      "column": "true_rs2052129",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs2052129",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs2052129",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs2052129",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs10156191",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs10156191",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs10156191",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs10156191",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "true_rs1049742",
+      "type": "integer",
+      "description": "Simulovaná pravá dávka efektovej alely 0, 1 alebo 2."
+    },
+    {
+      "column": "obs_rs1049742",
+      "type": "number",
+      "description": "Numerický vstup modelu; nie vždy individuálny genotyp."
+    },
+    {
+      "column": "quality_rs1049742",
+      "type": "number",
+      "description": "Kvalita pôvodu: 1 direct, r² proxy alebo 0 pri chýbaní/population."
+    },
+    {
+      "column": "source_rs1049742",
+      "type": "category",
+      "description": "Pôvod direct, proxy, population alebo missing."
+    },
+    {
+      "column": "oracle_genetic_score",
+      "type": "derived",
+      "description": "Celý počet efektových alel 0 až 2 na lokus."
+    },
+    {
+      "column": "oracle_weighted_score",
+      "type": "derived",
+      "description": "Agregovaný súčet dávka krát publikovaná alebo deklarovaná váha."
+    },
+    {
+      "column": "observed_integer_score",
+      "type": "derived",
+      "description": "Celý počet alel zistených priamo alebo cez proxy; chýbajúce lokusy nepridávajú body."
+    },
+    {
+      "column": "oracle_class",
+      "type": "derived",
+      "description": "Číselný kód triedy syntetického oracle."
+    },
+    {
+      "column": "oracle_label",
+      "type": "derived",
+      "description": "Textová trieda syntetického oracle."
+    },
+    {
+      "column": "direct_count",
+      "type": "derived",
+      "description": "Počet priamo zistených cieľov."
+    },
+    {
+      "column": "proxy_count",
+      "type": "derived",
+      "description": "Počet cieľov odvodených auditovanou proxy."
+    },
+    {
+      "column": "population_imputed_count",
+      "type": "derived",
+      "description": "Počet numerických populačných očakávaní použitých iba pre ML príznaky."
+    },
+    {
+      "column": "missing_count",
+      "type": "derived",
+      "description": "Počet chýbajúcich cieľov bez populačnej imputácie."
+    },
+    {
+      "column": "coverage_fraction",
+      "type": "derived",
+      "description": "Podiel cieľov zistených priamo alebo cez proxy."
+    },
+    {
+      "column": "split",
+      "type": "derived",
+      "description": "Fixné rozdelenie train, validation alebo test."
+    }
+  ]
+}

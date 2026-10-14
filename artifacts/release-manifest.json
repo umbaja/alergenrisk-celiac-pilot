@@ -1,15 +1,20 @@
 {
-  "release": "v0.1.0",
+  "release": "v0.2.0",
   "files": [
     {
       "path": "config/celiac_model_v1.json",
-      "sha256": "14661d948e774d29e0533839c1af6c149326de04b76b97b77a42121faa25b4a4",
-      "bytes": 9003
+      "sha256": "87c607a0805b8729284a39ff73637b37be846ed3dfea09bb4b40ea89e6baeb59",
+      "bytes": 8900
     },
     {
       "path": "config/celiac_proxy_audit_v1.json",
       "sha256": "5fec3251d53aa5a0d257b423cd39d561a92f8bd35340cae5ac30d9074c8754bc",
       "bytes": 11955
+    },
+    {
+      "path": "config/trait_models_v1.json",
+      "sha256": "ce227662e2ef16231944e45f2fd37881acb1e5b70fa7911b7b2a667a7061189d",
+      "bytes": 13875
     },
     {
       "path": "data/synthetic/celiac_pilot_v1.csv.gz",
@@ -22,9 +27,49 @@
       "bytes": 6429
     },
     {
+      "path": "artifacts/multitrait/evaluation.json",
+      "sha256": "42f3c70a30647a11d4a006a02252d73fbc2dfa752e24610383306b2ecf452a7f",
+      "bytes": 40739
+    },
+    {
       "path": "site/assets/structured-model.json",
       "sha256": "83e6dc39a79863fd603118ba0b8ec5b5de585da8c81374305b2748d51f5035ec",
       "bytes": 20041
+    },
+    {
+      "path": "site/assets/trait-structured-models.json",
+      "sha256": "9ea559fa447b6b2f1461628f130c30f345b6985b0696bc425d35ea13bcb1c085",
+      "bytes": 25967
+    },
+    {
+      "path": "data/synthetic/egg_pilot_v1.csv.gz",
+      "sha256": "44572a42a982db7518962c606840c4264b635b87dd2cd933b877c285a408d75b",
+      "bytes": 53237
+    },
+    {
+      "path": "data/synthetic/histamine_pilot_v1.csv.gz",
+      "sha256": "fde38c895497576a9aa4c880d9844282f3e36921ecec0bcfa6a8919147894211",
+      "bytes": 37901
+    },
+    {
+      "path": "data/synthetic/lactose_pilot_v1.csv.gz",
+      "sha256": "54f2fe42f4c09dd840a4de0109bd735a2436ca00458a74c163cc8668e9bd0ef8",
+      "bytes": 24563
+    },
+    {
+      "path": "data/synthetic/milk_pilot_v1.csv.gz",
+      "sha256": "c6eaba9302dad9394ed95275353363e00bb953b81ad16112fbe5fdc03cf2b23c",
+      "bytes": 66321
+    },
+    {
+      "path": "data/synthetic/peanut_pilot_v1.csv.gz",
+      "sha256": "6118daa2f4b643e2968e38e4c8650d6c4ee3d99c4d26bd81a6651b986044ee9b",
+      "bytes": 70248
+    },
+    {
+      "path": "data/synthetic/shared_pilot_v1.csv.gz",
+      "sha256": "d6a14d930e4f51f607a549ad51fa1c0141db68d11dc95e39df682b85038ad686",
+      "bytes": 43194
     },
     {
       "path": "output/pdf/AlergenRisk_Celiac_Pilot_Procesna_mapa.pdf",
@@ -45,6 +90,11 @@
       "path": "output/pdf/AlergenRisk_Celiac_Pilot_Vyskumna_studia.pdf",
       "sha256": "e10a7c67270e6743b41e25c37374fb7a3a44a0da3c420e5fac16b926facbe59a",
       "bytes": 85459
+    },
+    {
+      "path": "output/pdf/AlergenRisk_Multitrait_Pilot_Metodika_a_validacia.pdf",
+      "sha256": "bd403a5117c056bca6412d2825c681c742acaac9b6614849075d4d2bdc285f61",
+      "bytes": 88629
     }
   ],
   "clinical_validation": false

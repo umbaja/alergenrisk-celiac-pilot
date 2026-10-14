@@ -1,9 +1,9 @@
-# Release checklist - v0.1.0
+# Release checklist - v0.2.0
 
 ## Dokončené
 
-- [x] verzovaný modelový register a proxy katalóg,
-- [x] fixný syntetický dataset a dátový slovník,
+- [x] verzované registre siedmich znakov a proxy katalógy,
+- [x] sedem fixných syntetických datasetov a dátové slovníky,
 - [x] oddelené train, validation a test množiny,
 - [x] baseline, additive a structured model,
 - [x] confusion matrix, precision, recall, F1, ROC-AUC, PR-AUC, FNR a Brier score,
@@ -17,7 +17,7 @@
 ## Otvorené pred formálnym odovzdaním
 
 - [ ] vlastník projektu musí zvoliť licenciu (napr. MIT alebo proprietárna research-only licencia),
-- [ ] vytvoriť označený GitHub release/tag `v0.1.0`,
+- [ ] vytvoriť označený GitHub release/tag `v0.2.0`,
 - [ ] archivovať presný release balík v internom dokumentovom úložisku,
 - [ ] pre klinické tvrdenia doplniť nezávislú fenotypovanú kohortu a externý validačný protokol.
 

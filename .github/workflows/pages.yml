@@ -1,4 +1,4 @@
-name: Deploy celiac pilot dashboard
+name: Deploy AlergenRisk research dashboard
 
 on:
   push:

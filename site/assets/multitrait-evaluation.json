@@ -1,0 +1,1312 @@
+{
+  "bundle_id": "alergenrisk-multitrait-pilot-v1",
+  "model_version": "0.2.0",
+  "manifest_sha256": "ce227662e2ef16231944e45f2fd37881acb1e5b70fa7911b7b2a667a7061189d",
+  "clinical_validation": false,
+  "seed": 20261014,
+  "traits": {
+    "egg": {
+      "name_sk": "Vajce",
+      "model_type": "multilocus-additive",
+      "evidence_tier": "GWAS, experimentálny panel",
+      "dataset": {
+        "rows": 6000,
+        "columns": 31,
+        "sha256": "44572a42a982db7518962c606840c4264b635b87dd2cd933b877c285a408d75b",
+        "class_distribution": {
+          "typical": 3303,
+          "low": 2078,
+          "high": 619
+        },
+        "split_distribution": {
+          "train": 3598,
+          "test": 1201,
+          "validation": 1201
+        }
+      },
+      "models": {
+        "baseline": {
+          "feature_count": 3,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.08,
+            "recall": 1.0,
+            "precision": 0.1035923141186299
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.5503746877601998,
+            "macro_f1": 0.2366630862871464,
+            "multiclass_log_loss": 0.934056926364812,
+            "confusion_matrix": [
+              [
+                0,
+                416,
+                0
+              ],
+              [
+                0,
+                661,
+                0
+              ],
+              [
+                0,
+                124,
+                0
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 416,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "typical": {
+                "support": 661,
+                "precision": 0.5503746877601998,
+                "recall": 1.0,
+                "f1": 0.7099892588614393
+              },
+              "high": {
+                "support": 124,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.08,
+              "tp": 123,
+              "tn": 1,
+              "fp": 1076,
+              "fn": 1,
+              "precision": 0.10258548790658882,
+              "recall": 0.9919354838709677,
+              "specificity": 0.0009285051067780873,
+              "false_negative_rate": 0.008064516129032258,
+              "roc_auc": 0.5532729805013927,
+              "pr_auc": 0.146543497320316,
+              "brier": 0.09391074878912811
+            }
+          },
+          "artifact": "artifacts/multitrait/egg/models/baseline.npz"
+        },
+        "additive": {
+          "feature_count": 13,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.13999999999999999,
+            "recall": 0.9596774193548387,
+            "precision": 0.695906432748538
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9317235636969192,
+            "macro_f1": 0.9217103894283811,
+            "multiclass_log_loss": 0.24050098779854148,
+            "confusion_matrix": [
+              [
+                381,
+                34,
+                1
+              ],
+              [
+                23,
+                630,
+                8
+              ],
+              [
+                0,
+                16,
+                108
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 416,
+                "precision": 0.943069306930693,
+                "recall": 0.9158653846153846,
+                "f1": 0.9292682926829268
+              },
+              "typical": {
+                "support": 661,
+                "precision": 0.9264705882352942,
+                "recall": 0.9531013615733737,
+                "f1": 0.9395973154362416
+              },
+              "high": {
+                "support": 124,
+                "precision": 0.9230769230769231,
+                "recall": 0.8709677419354839,
+                "f1": 0.8962655601659751
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.13999999999999999,
+              "tp": 118,
+              "tn": 1015,
+              "fp": 62,
+              "fn": 6,
+              "precision": 0.6555555555555556,
+              "recall": 0.9516129032258065,
+              "specificity": 0.9424326833797586,
+              "false_negative_rate": 0.04838709677419355,
+              "roc_auc": 0.9864355887021895,
+              "pr_auc": 0.9258884077847047,
+              "brier": 0.019720280442386075
+            }
+          },
+          "artifact": "artifacts/multitrait/egg/models/additive.npz"
+        },
+        "structured": {
+          "feature_count": 21,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.18,
+            "recall": 0.9516129032258065,
+            "precision": 0.6820809248554913
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9300582847626978,
+            "macro_f1": 0.9122093090823385,
+            "multiclass_log_loss": 0.2270524046679966,
+            "confusion_matrix": [
+              [
+                388,
+                27,
+                1
+              ],
+              [
+                23,
+                624,
+                14
+              ],
+              [
+                0,
+                19,
+                105
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 416,
+                "precision": 0.9440389294403893,
+                "recall": 0.9326923076923077,
+                "f1": 0.9383313180169286
+              },
+              "typical": {
+                "support": 661,
+                "precision": 0.9313432835820895,
+                "recall": 0.9440242057488654,
+                "f1": 0.937640871525169
+              },
+              "high": {
+                "support": 124,
+                "precision": 0.875,
+                "recall": 0.8467741935483871,
+                "f1": 0.8606557377049181
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.18,
+              "tp": 118,
+              "tn": 1009,
+              "fp": 68,
+              "fn": 6,
+              "precision": 0.6344086021505376,
+              "recall": 0.9516129032258065,
+              "specificity": 0.9368616527390901,
+              "false_negative_rate": 0.04838709677419355,
+              "roc_auc": 0.9846235061550903,
+              "pr_auc": 0.9261478082859091,
+              "brier": 0.020957012055711908
+            }
+          },
+          "artifact": "artifacts/multitrait/egg/models/structured.npz"
+        }
+      }
+    },
+    "peanut": {
+      "name_sk": "Arašidy",
+      "model_type": "multilocus-additive-with-LD-caution",
+      "evidence_tier": "2 replikované HLA markery + 3 sugestívne GWAS lokusy",
+      "dataset": {
+        "rows": 6000,
+        "columns": 35,
+        "sha256": "6118daa2f4b643e2968e38e4c8650d6c4ee3d99c4d26bd81a6651b986044ee9b",
+        "class_distribution": {
+          "typical": 4030,
+          "high": 1177,
+          "low": 793
+        },
+        "split_distribution": {
+          "train": 3599,
+          "test": 1201,
+          "validation": 1200
+        }
+      },
+      "models": {
+        "baseline": {
+          "feature_count": 3,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.09000000000000001,
+            "recall": 0.9574468085106383,
+            "precision": 0.20161290322580644
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.6652789342214821,
+            "macro_f1": 0.38362834727355244,
+            "multiclass_log_loss": 0.802608889201144,
+            "confusion_matrix": [
+              [
+                0,
+                156,
+                3
+              ],
+              [
+                0,
+                728,
+                78
+              ],
+              [
+                0,
+                165,
+                71
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 159,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "typical": {
+                "support": 806,
+                "precision": 0.6939942802669209,
+                "recall": 0.9032258064516129,
+                "f1": 0.7849056603773584
+              },
+              "high": {
+                "support": 236,
+                "precision": 0.46710526315789475,
+                "recall": 0.3008474576271186,
+                "f1": 0.36597938144329895
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.09000000000000001,
+              "tp": 231,
+              "tn": 74,
+              "fp": 891,
+              "fn": 5,
+              "precision": 0.20588235294117646,
+              "recall": 0.9788135593220338,
+              "specificity": 0.0766839378238342,
+              "false_negative_rate": 0.0211864406779661,
+              "roc_auc": 0.6872661807324142,
+              "pr_auc": 0.35453199133838786,
+              "brier": 0.14961900693721145
+            }
+          },
+          "artifact": "artifacts/multitrait/peanut/models/baseline.npz"
+        },
+        "additive": {
+          "feature_count": 15,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.22999999999999998,
+            "recall": 0.9574468085106383,
+            "precision": 0.8395522388059702
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9317235636969192,
+            "macro_f1": 0.9134166452294744,
+            "multiclass_log_loss": 0.24845917061242914,
+            "confusion_matrix": [
+              [
+                138,
+                21,
+                0
+              ],
+              [
+                10,
+                771,
+                25
+              ],
+              [
+                0,
+                26,
+                210
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 159,
+                "precision": 0.9324324324324325,
+                "recall": 0.8679245283018868,
+                "f1": 0.8990228013029317
+              },
+              "typical": {
+                "support": 806,
+                "precision": 0.9425427872860636,
+                "recall": 0.956575682382134,
+                "f1": 0.9495073891625615
+              },
+              "high": {
+                "support": 236,
+                "precision": 0.8936170212765957,
+                "recall": 0.8898305084745762,
+                "f1": 0.8917197452229298
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.22999999999999998,
+              "tp": 221,
+              "tn": 913,
+              "fp": 52,
+              "fn": 15,
+              "precision": 0.8095238095238095,
+              "recall": 0.9364406779661016,
+              "specificity": 0.9461139896373058,
+              "false_negative_rate": 0.0635593220338983,
+              "roc_auc": 0.97318872398349,
+              "pr_auc": 0.9141931749615968,
+              "brier": 0.038995228517537464
+            }
+          },
+          "artifact": "artifacts/multitrait/peanut/models/additive.npz"
+        },
+        "structured": {
+          "feature_count": 27,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.19,
+            "recall": 0.9531914893617022,
+            "precision": 0.8086642599277978
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9308909242298085,
+            "macro_f1": 0.9129445792149175,
+            "multiclass_log_loss": 0.23414663855152257,
+            "confusion_matrix": [
+              [
+                143,
+                16,
+                0
+              ],
+              [
+                16,
+                767,
+                23
+              ],
+              [
+                0,
+                28,
+                208
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 159,
+                "precision": 0.89937106918239,
+                "recall": 0.89937106918239,
+                "f1": 0.89937106918239
+              },
+              "typical": {
+                "support": 806,
+                "precision": 0.9457459926017263,
+                "recall": 0.9516129032258065,
+                "f1": 0.9486703772418059
+              },
+              "high": {
+                "support": 236,
+                "precision": 0.9004329004329005,
+                "recall": 0.8813559322033898,
+                "f1": 0.8907922912205567
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.19,
+              "tp": 225,
+              "tn": 910,
+              "fp": 55,
+              "fn": 11,
+              "precision": 0.8035714285714286,
+              "recall": 0.9533898305084746,
+              "specificity": 0.9430051813471503,
+              "false_negative_rate": 0.046610169491525424,
+              "roc_auc": 0.9776104329498551,
+              "pr_auc": 0.9171272761752294,
+              "brier": 0.0367390241365189
+            }
+          },
+          "artifact": "artifacts/multitrait/peanut/models/structured.npz"
+        }
+      }
+    },
+    "milk": {
+      "name_sk": "Kravské mlieko",
+      "model_type": "multilocus-additive-with-required-proxies",
+      "evidence_tier": "GWAS + malá kandidátna štúdia",
+      "dataset": {
+        "rows": 6000,
+        "columns": 35,
+        "sha256": "c6eaba9302dad9394ed95275353363e00bb953b81ad16112fbe5fdc03cf2b23c",
+        "class_distribution": {
+          "typical": 4194,
+          "low": 1412,
+          "high": 394
+        },
+        "split_distribution": {
+          "train": 3599,
+          "test": 1201,
+          "validation": 1200
+        }
+      },
+      "models": {
+        "baseline": {
+          "feature_count": 3,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.07,
+            "recall": 1.0,
+            "precision": 0.06583333333333333
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.6985845129059117,
+            "macro_f1": 0.2741830065359477,
+            "multiclass_log_loss": 0.7801263707970177,
+            "confusion_matrix": [
+              [
+                0,
+                283,
+                0
+              ],
+              [
+                0,
+                839,
+                0
+              ],
+              [
+                0,
+                79,
+                0
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 283,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "typical": {
+                "support": 839,
+                "precision": 0.6985845129059117,
+                "recall": 1.0,
+                "f1": 0.8225490196078431
+              },
+              "high": {
+                "support": 79,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.07,
+              "tp": 79,
+              "tn": 0,
+              "fp": 1122,
+              "fn": 0,
+              "precision": 0.06577851790174855,
+              "recall": 1.0,
+              "specificity": 0.0,
+              "false_negative_rate": 0.0,
+              "roc_auc": 0.46635754416841535,
+              "pr_auc": 0.060213468442635136,
+              "brier": 0.06347416117354532
+            }
+          },
+          "artifact": "artifacts/multitrait/milk/models/baseline.npz"
+        },
+        "additive": {
+          "feature_count": 15,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.03,
+            "recall": 0.9620253164556962,
+            "precision": 0.18627450980392157
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.8243130724396336,
+            "macro_f1": 0.738540200159704,
+            "multiclass_log_loss": 0.4119648939440683,
+            "confusion_matrix": [
+              [
+                208,
+                75,
+                0
+              ],
+              [
+                71,
+                733,
+                35
+              ],
+              [
+                0,
+                30,
+                49
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 283,
+                "precision": 0.7455197132616488,
+                "recall": 0.734982332155477,
+                "f1": 0.7402135231316725
+              },
+              "typical": {
+                "support": 839,
+                "precision": 0.8747016706443914,
+                "recall": 0.8736591179976162,
+                "f1": 0.874180083482409
+              },
+              "high": {
+                "support": 79,
+                "precision": 0.5833333333333334,
+                "recall": 0.620253164556962,
+                "f1": 0.6012269938650308
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.03,
+              "tp": 77,
+              "tn": 793,
+              "fp": 329,
+              "fn": 2,
+              "precision": 0.1896551724137931,
+              "recall": 0.9746835443037974,
+              "specificity": 0.7067736185383244,
+              "false_negative_rate": 0.02531645569620253,
+              "roc_auc": 0.9274069812044495,
+              "pr_auc": 0.5309125923858297,
+              "brier": 0.044114577579001564
+            }
+          },
+          "artifact": "artifacts/multitrait/milk/models/additive.npz"
+        },
+        "structured": {
+          "feature_count": 27,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.04,
+            "recall": 0.9620253164556962,
+            "precision": 0.2037533512064343
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.8243130724396336,
+            "macro_f1": 0.7308491851068596,
+            "multiclass_log_loss": 0.41721663975874285,
+            "confusion_matrix": [
+              [
+                192,
+                91,
+                0
+              ],
+              [
+                55,
+                751,
+                33
+              ],
+              [
+                0,
+                32,
+                47
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 283,
+                "precision": 0.7773279352226721,
+                "recall": 0.6784452296819788,
+                "f1": 0.7245283018867925
+              },
+              "typical": {
+                "support": 839,
+                "precision": 0.8592677345537757,
+                "recall": 0.8951132300357568,
+                "f1": 0.8768242848803269
+              },
+              "high": {
+                "support": 79,
+                "precision": 0.5875,
+                "recall": 0.5949367088607594,
+                "f1": 0.5911949685534591
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.04,
+              "tp": 73,
+              "tn": 822,
+              "fp": 300,
+              "fn": 6,
+              "precision": 0.19571045576407506,
+              "recall": 0.9240506329113924,
+              "specificity": 0.732620320855615,
+              "false_negative_rate": 0.0759493670886076,
+              "roc_auc": 0.9211794038674158,
+              "pr_auc": 0.5488012270137471,
+              "brier": 0.04569129570347775
+            }
+          },
+          "artifact": "artifacts/multitrait/milk/models/structured.npz"
+        }
+      }
+    },
+    "shared": {
+      "name_sk": "Spoločná potravinová predispozícia",
+      "model_type": "multilocus-additive",
+      "evidence_tier": "GWAS všeobecnej potravinovej alergie",
+      "dataset": {
+        "rows": 6000,
+        "columns": 27,
+        "sha256": "d6a14d930e4f51f607a549ad51fa1c0141db68d11dc95e39df682b85038ad686",
+        "class_distribution": {
+          "typical": 4183,
+          "high": 945,
+          "low": 872
+        },
+        "split_distribution": {
+          "train": 3599,
+          "test": 1201,
+          "validation": 1200
+        }
+      },
+      "models": {
+        "baseline": {
+          "feature_count": 3,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.16,
+            "recall": 1.0,
+            "precision": 0.15763135946622187
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.6877601998334721,
+            "macro_f1": 0.29318373131306674,
+            "multiclass_log_loss": 0.832478470919946,
+            "confusion_matrix": [
+              [
+                0,
+                171,
+                4
+              ],
+              [
+                0,
+                819,
+                18
+              ],
+              [
+                0,
+                182,
+                7
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 175,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "typical": {
+                "support": 837,
+                "precision": 0.6988054607508533,
+                "recall": 0.978494623655914,
+                "f1": 0.8153310104529617
+              },
+              "high": {
+                "support": 189,
+                "precision": 0.2413793103448276,
+                "recall": 0.037037037037037035,
+                "f1": 0.06422018348623854
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.16,
+              "tp": 189,
+              "tn": 0,
+              "fp": 1012,
+              "fn": 0,
+              "precision": 0.15736885928393005,
+              "recall": 1.0,
+              "specificity": 0.0,
+              "false_negative_rate": 0.0,
+              "roc_auc": 0.5607106259280172,
+              "pr_auc": 0.2201149914280096,
+              "brier": 0.13718056518519817
+            }
+          },
+          "artifact": "artifacts/multitrait/shared/models/baseline.npz"
+        },
+        "additive": {
+          "feature_count": 11,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.22,
+            "recall": 0.9523809523809523,
+            "precision": 0.8530805687203792
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9300582847626978,
+            "macro_f1": 0.9062262128336055,
+            "multiclass_log_loss": 0.2488177387163112,
+            "confusion_matrix": [
+              [
+                154,
+                20,
+                1
+              ],
+              [
+                23,
+                787,
+                27
+              ],
+              [
+                1,
+                12,
+                176
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 175,
+                "precision": 0.8651685393258427,
+                "recall": 0.88,
+                "f1": 0.8725212464589235
+              },
+              "typical": {
+                "support": 837,
+                "precision": 0.960927960927961,
+                "recall": 0.94026284348865,
+                "f1": 0.9504830917874397
+              },
+              "high": {
+                "support": 189,
+                "precision": 0.8627450980392157,
+                "recall": 0.9312169312169312,
+                "f1": 0.8956743002544529
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.22,
+              "tp": 176,
+              "tn": 979,
+              "fp": 33,
+              "fn": 13,
+              "precision": 0.8421052631578947,
+              "recall": 0.9312169312169312,
+              "specificity": 0.967391304347826,
+              "false_negative_rate": 0.06878306878306878,
+              "roc_auc": 0.9637001484827572,
+              "pr_auc": 0.8547255560328247,
+              "brier": 0.032058521002630985
+            }
+          },
+          "artifact": "artifacts/multitrait/shared/models/additive.npz"
+        },
+        "structured": {
+          "feature_count": 16,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.25,
+            "recall": 0.9576719576719577,
+            "precision": 0.8497652582159625
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9267277268942548,
+            "macro_f1": 0.9020579836276132,
+            "multiclass_log_loss": 0.24801820306763997,
+            "confusion_matrix": [
+              [
+                156,
+                18,
+                1
+              ],
+              [
+                26,
+                785,
+                26
+              ],
+              [
+                1,
+                16,
+                172
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 175,
+                "precision": 0.8524590163934426,
+                "recall": 0.8914285714285715,
+                "f1": 0.8715083798882681
+              },
+              "typical": {
+                "support": 837,
+                "precision": 0.9584859584859585,
+                "recall": 0.937873357228196,
+                "f1": 0.9480676328502415
+              },
+              "high": {
+                "support": 189,
+                "precision": 0.864321608040201,
+                "recall": 0.91005291005291,
+                "f1": 0.8865979381443299
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.25,
+              "tp": 172,
+              "tn": 975,
+              "fp": 37,
+              "fn": 17,
+              "precision": 0.8229665071770335,
+              "recall": 0.91005291005291,
+              "specificity": 0.9634387351778656,
+              "false_negative_rate": 0.08994708994708994,
+              "roc_auc": 0.9701100027186984,
+              "pr_auc": 0.8697223662906689,
+              "brier": 0.0332358209507133
+            }
+          },
+          "artifact": "artifacts/multitrait/shared/models/structured.npz"
+        }
+      }
+    },
+    "lactose": {
+      "name_sk": "Laktóza",
+      "model_type": "deterministic-genotype-rule",
+      "evidence_tier": "funkčný populačne špecifický marker",
+      "dataset": {
+        "rows": 6000,
+        "columns": 19,
+        "sha256": "54f2fe42f4c09dd840a4de0109bd735a2436ca00458a74c163cc8668e9bd0ef8",
+        "class_distribution": {
+          "persistent": 4501,
+          "nonpersistent": 1499
+        },
+        "split_distribution": {
+          "train": 3599,
+          "test": 1201,
+          "validation": 1200
+        }
+      },
+      "models": {
+        "baseline": {
+          "feature_count": 3,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.36000000000000004,
+            "recall": 1.0,
+            "precision": 0.6048387096774194
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9417152373022482,
+            "macro_f1": 0.9152656829543623,
+            "multiclass_log_loss": 0.14367723364892102,
+            "confusion_matrix": [
+              [
+                901,
+                0
+              ],
+              [
+                70,
+                230
+              ]
+            ],
+            "per_class": {
+              "persistent": {
+                "support": 901,
+                "precision": 0.9279093717816684,
+                "recall": 1.0,
+                "f1": 0.9626068376068376
+              },
+              "nonpersistent": {
+                "support": 300,
+                "precision": 1.0,
+                "recall": 0.7666666666666667,
+                "f1": 0.8679245283018869
+              }
+            },
+            "high_risk": {
+              "label": "nonpersistent",
+              "threshold": 0.36000000000000004,
+              "tp": 300,
+              "tn": 688,
+              "fp": 213,
+              "fn": 0,
+              "precision": 0.5847953216374269,
+              "recall": 1.0,
+              "specificity": 0.7635960044395117,
+              "false_negative_rate": 0.0,
+              "roc_auc": 0.9724195338512763,
+              "pr_auc": 0.9351203435130603,
+              "brier": 0.047103951507576486
+            }
+          },
+          "artifact": "artifacts/multitrait/lactose/models/baseline.npz"
+        },
+        "additive": {
+          "feature_count": 7,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.27,
+            "recall": 1.0,
+            "precision": 0.6048387096774194
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9417152373022482,
+            "macro_f1": 0.9152656829543623,
+            "multiclass_log_loss": 0.13847304223031198,
+            "confusion_matrix": [
+              [
+                901,
+                0
+              ],
+              [
+                70,
+                230
+              ]
+            ],
+            "per_class": {
+              "persistent": {
+                "support": 901,
+                "precision": 0.9279093717816684,
+                "recall": 1.0,
+                "f1": 0.9626068376068376
+              },
+              "nonpersistent": {
+                "support": 300,
+                "precision": 1.0,
+                "recall": 0.7666666666666667,
+                "f1": 0.8679245283018869
+              }
+            },
+            "high_risk": {
+              "label": "nonpersistent",
+              "threshold": 0.27,
+              "tp": 300,
+              "tn": 688,
+              "fp": 213,
+              "fn": 0,
+              "precision": 0.5847953216374269,
+              "recall": 1.0,
+              "specificity": 0.7635960044395117,
+              "false_negative_rate": 0.0,
+              "roc_auc": 0.9784073251942287,
+              "pr_auc": 0.9497846439815145,
+              "brier": 0.0447414844506628
+            }
+          },
+          "artifact": "artifacts/multitrait/lactose/models/additive.npz"
+        },
+        "structured": {
+          "feature_count": 9,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.27,
+            "recall": 1.0,
+            "precision": 0.6048387096774194
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.9417152373022482,
+            "macro_f1": 0.9152656829543623,
+            "multiclass_log_loss": 0.14031864562452834,
+            "confusion_matrix": [
+              [
+                901,
+                0
+              ],
+              [
+                70,
+                230
+              ]
+            ],
+            "per_class": {
+              "persistent": {
+                "support": 901,
+                "precision": 0.9279093717816684,
+                "recall": 1.0,
+                "f1": 0.9626068376068376
+              },
+              "nonpersistent": {
+                "support": 300,
+                "precision": 1.0,
+                "recall": 0.7666666666666667,
+                "f1": 0.8679245283018869
+              }
+            },
+            "high_risk": {
+              "label": "nonpersistent",
+              "threshold": 0.27,
+              "tp": 300,
+              "tn": 688,
+              "fp": 213,
+              "fn": 0,
+              "precision": 0.5847953216374269,
+              "recall": 1.0,
+              "specificity": 0.7635960044395117,
+              "false_negative_rate": 0.0,
+              "roc_auc": 0.9727395486496485,
+              "pr_auc": 0.9387977912325065,
+              "brier": 0.046641783330103714
+            }
+          },
+          "artifact": "artifacts/multitrait/lactose/models/structured.npz"
+        }
+      }
+    },
+    "histamine": {
+      "name_sk": "Histamín / DAO",
+      "model_type": "candidate-gene-allele-count",
+      "evidence_tier": "kandidátna asociačná štúdia aktivity DAO",
+      "dataset": {
+        "rows": 6000,
+        "columns": 27,
+        "sha256": "fde38c895497576a9aa4c880d9844282f3e36921ecec0bcfa6a8919147894211",
+        "class_distribution": {
+          "low": 3765,
+          "typical": 2141,
+          "high": 94
+        },
+        "split_distribution": {
+          "train": 3599,
+          "test": 1201,
+          "validation": 1200
+        }
+      },
+      "models": {
+        "baseline": {
+          "feature_count": 3,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.02,
+            "recall": 0.6842105263157895,
+            "precision": 0.024667931688804556
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.7135720233139051,
+            "macro_f1": 0.4577558988003167,
+            "multiclass_log_loss": 0.611105603592601,
+            "confusion_matrix": [
+              [
+                620,
+                133,
+                0
+              ],
+              [
+                192,
+                237,
+                0
+              ],
+              [
+                7,
+                12,
+                0
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 753,
+                "precision": 0.757020757020757,
+                "recall": 0.8233731739707836,
+                "f1": 0.7888040712468193
+              },
+              "typical": {
+                "support": 429,
+                "precision": 0.6204188481675392,
+                "recall": 0.5524475524475524,
+                "f1": 0.5844636251541306
+              },
+              "high": {
+                "support": 19,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.02,
+              "tp": 16,
+              "tn": 691,
+              "fp": 491,
+              "fn": 3,
+              "precision": 0.03155818540433925,
+              "recall": 0.8421052631578947,
+              "specificity": 0.5846023688663282,
+              "false_negative_rate": 0.15789473684210525,
+              "roc_auc": 0.7790542345711996,
+              "pr_auc": 0.10767287117382937,
+              "brier": 0.01600959767030221
+            }
+          },
+          "artifact": "artifacts/multitrait/histamine/models/baseline.npz"
+        },
+        "additive": {
+          "feature_count": 11,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.19999999999999998,
+            "recall": 0.8947368421052632,
+            "precision": 0.5483870967741935
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.8925895087427144,
+            "macro_f1": 0.8037705755610346,
+            "multiclass_log_loss": 0.2772925585866947,
+            "confusion_matrix": [
+              [
+                709,
+                44,
+                0
+              ],
+              [
+                75,
+                354,
+                0
+              ],
+              [
+                0,
+                10,
+                9
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 753,
+                "precision": 0.9043367346938775,
+                "recall": 0.9415670650730412,
+                "f1": 0.922576447625244
+              },
+              "typical": {
+                "support": 429,
+                "precision": 0.8676470588235294,
+                "recall": 0.8251748251748252,
+                "f1": 0.8458781362007168
+              },
+              "high": {
+                "support": 19,
+                "precision": 1.0,
+                "recall": 0.47368421052631576,
+                "f1": 0.6428571428571429
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.19999999999999998,
+              "tp": 16,
+              "tn": 1171,
+              "fp": 11,
+              "fn": 3,
+              "precision": 0.5925925925925926,
+              "recall": 0.8421052631578947,
+              "specificity": 0.9906937394247038,
+              "false_negative_rate": 0.15789473684210525,
+              "roc_auc": 0.9866417312316323,
+              "pr_auc": 0.8229162400056275,
+              "brier": 0.007145129397660268
+            }
+          },
+          "artifact": "artifacts/multitrait/histamine/models/additive.npz"
+        },
+        "structured": {
+          "feature_count": 16,
+          "high_threshold_selection_on_validation": {
+            "threshold": 0.05,
+            "recall": 0.7368421052631579,
+            "precision": 0.2
+          },
+          "test": {
+            "samples": 1201,
+            "accuracy": 0.884263114071607,
+            "macro_f1": 0.7809682438389408,
+            "multiclass_log_loss": 0.25445307821747365,
+            "confusion_matrix": [
+              [
+                730,
+                23,
+                0
+              ],
+              [
+                104,
+                323,
+                2
+              ],
+              [
+                0,
+                10,
+                9
+              ]
+            ],
+            "per_class": {
+              "low": {
+                "support": 753,
+                "precision": 0.8752997601918465,
+                "recall": 0.9694555112881806,
+                "f1": 0.9199747952110902
+              },
+              "typical": {
+                "support": 429,
+                "precision": 0.9073033707865169,
+                "recall": 0.752913752913753,
+                "f1": 0.8229299363057325
+              },
+              "high": {
+                "support": 19,
+                "precision": 0.8181818181818182,
+                "recall": 0.47368421052631576,
+                "f1": 0.6
+              }
+            },
+            "high_risk": {
+              "label": "high",
+              "threshold": 0.05,
+              "tp": 15,
+              "tn": 1140,
+              "fp": 42,
+              "fn": 4,
+              "precision": 0.2631578947368421,
+              "recall": 0.7894736842105263,
+              "specificity": 0.9644670050761421,
+              "false_negative_rate": 0.21052631578947367,
+              "roc_auc": 0.9795618487843976,
+              "pr_auc": 0.7037315816706872,
+              "brier": 0.007629690934212293
+            }
+          },
+          "artifact": "artifacts/multitrait/histamine/models/structured.npz"
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Synthetic labels reproduce explicit model logic and do not measure clinical prediction.",
+    "Chip profiles are stress-test assumptions, not measured vendor performance.",
+    "Candidate-gene and descriptive panels retain their original evidence limitations."
+  ]
+}

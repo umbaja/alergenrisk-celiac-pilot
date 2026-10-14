@@ -3,54 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Reprodukovateľný výskumný pilot celiakálneho panelu AlergenRisk.">
-  <title>AlergenRisk Celiac Pilot</title>
+  <meta name="description" content="Reprodukovateľný viacznakový výskumný pilot AlergenRisk.">
+  <title>AlergenRisk Research Pilot</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="index.html">NU3GEN <span>/ ALERGENRISK</span></a>
-    <nav aria-label="Hlavná navigácia">
-      <a aria-current="page" href="index.html">Prehľad</a><a href="calculator.html">Výpočet</a>
-      <a href="data.html">Dáta</a><a href="audit.html">SNP audit</a><a href="docs.html">Dokumentácia</a>
-    </nav>
+    <nav aria-label="Hlavná navigácia"><a aria-current="page" href="index.html">Prehľad</a><a href="calculator.html">Výpočet</a><a href="data.html">Dáta</a><a href="audit.html">SNP audit</a><a href="docs.html">Dokumentácia</a></nav>
   </header>
   <main>
     <section class="hero">
-      <p class="eyebrow">PARALELNÝ VÝSKUMNÝ PILOT / V1</p>
-      <h1>Celiac <span>Pilot</span></h1>
-      <p class="lead">Auditovateľný polygénny model celiakálnej predispozície so syntetickým datasetom, transparentným skóre a výskumnou ML validáciou.</p>
-      <div class="actions"><a class="button primary" href="calculator.html">Otvoriť výpočet</a><a class="button" href="data.html">Prezrieť dáta</a></div>
+      <p class="eyebrow">PARALELNÝ VÝSKUMNÝ PILOT / V2</p>
+      <h1>AlergenRisk <span>Research</span></h1>
+      <p class="lead">Jednotná auditovateľná metodika pre vajce, arašidy, kravské mlieko, spoločnú potravinovú predispozíciu, laktózu, celiakiu a histamín/DAO.</p>
+      <div class="actions"><a class="button primary" href="calculator.html">Analyzovať všetky znaky</a><a class="button secondary" href="data.html">Prezrieť datasety</a></div>
     </section>
-    <aside class="notice"><strong>Výskumné obmedzenie.</strong> Výsledok vyjadruje relatívnu genetickú predispozíciu a zhodu modelu s definovanou logikou. Nie je diagnózou ani klinickou pravdepodobnosťou ochorenia.</aside>
+    <aside class="notice"><strong>Výskumné obmedzenie.</strong> Metriky dokazujú zhodu s explicitne definovanou genetickou logikou na syntetických dátach. Nie sú klinickou citlivosťou, diagnostickou presnosťou ani pravdepodobnosťou ochorenia.</aside>
     <section class="stat-grid" aria-label="Súhrn pilotu">
-      <article class="stat"><small>SYNTETICKÉ PRÍPADY</small><strong>12 000</strong><span>train / validation / test</span></article>
-      <article class="stat"><small>CIEĽOVÉ MARKERY</small><strong>50</strong><span>42 GRS + 8 HLA tagov</span></article>
-      <article class="stat"><small>ML PRÍZNAKY</small><strong>111</strong><span>pozorovania, kvalita, profil, interakcie</span></article>
+      <article class="stat"><small>MODELOVANÉ ZNAKY</small><strong>7</strong><span>samostatné registre a metodické profily</span></article>
+      <article class="stat"><small>SYNTETICKÉ PRÍPADY</small><strong>48 000</strong><span>12 000 celiakia + 6 × 6 000 ďalšie znaky</span></article>
+      <article class="stat"><small>PANEL-LOKUS ZÁZNAMY</small><strong>71</strong><span>50 celiakia + 21 v ostatných moduloch</span></article>
     </section>
+
+    <section><p class="eyebrow">SAMOSTATNÉ MODELOVÉ PROFILY</p><h2>Rovnaká auditná stopa, primeraná biologická logika</h2><div class="trait-card-grid">
+      <article class="trait-card"><small>4 SNP · GWAS</small><h3>Vajce</h3><p>Multilokusový aditívny panel, EUR proxy hierarchia, celé alelové skóre a samostatná kvalita vstupu.</p></article>
+      <article class="trait-card"><small>5 SNP · HLA + kandidáti</small><h3>Arašidy</h3><p>Dva replikované HLA markery a tri sugestívne lokusy; HLA LD je označené ako metodické obmedzenie.</p></article>
+      <article class="trait-card"><small>5 cieľov · 3 povinné proxy</small><h3>Kravské mlieko</h3><p>Proxy prispievajú celým číslom 0/1/2; r² a pravdepodobnosť odhadu ostávajú oddelené od genetického skóre.</p></article>
+      <article class="trait-card"><small>3 SNP · spoločný signál</small><h3>Potravinová predispozícia</h3><p>Spoločný GWAS signál bez predstierania samostatnej presnosti pre jednotlivé potraviny.</p></article>
+      <article class="trait-card"><small>1 SNP · pravidlový model</small><h3>Laktóza</h3><p>rs4988235 sa zachováva ako genotypové pravidlo. Chýbajúci marker sa neimputuje a nevytvára sa umelá polygénnosť.</p></article>
+      <article class="trait-card"><small>50 markerov · GRS + HLA</small><h3>Celiakia</h3><p>Publikované aditívne jadro, HLA diplotyp, proxy katalóg a výskumné rozšírenie.</p></article>
+      <article class="trait-card"><small>3 SNP · AOC1</small><h3>Histamín / DAO</h3><p>Kandidátny panel aktivity DAO bez populačnej imputácie a bez tvrdenia o diagnóze histamínovej intolerancie.</p></article>
+    </div></section>
+
     <section class="section-grid">
-      <div>
-        <p class="eyebrow">ČO JE DOKONČENÉ</p><h2>Od registra po auditný výstup</h2>
-        <p>Každý výsledok sa dá spätne priradiť k verzii modelu, vstupnému markeru, zdroju hodnoty a použitej rozhodovacej hranici.</p>
-      </div>
+      <div><p class="eyebrow">FORENZNÁ LOGIKA</p><h2>Každý bod je spätne vysvetliteľný</h2><p>Model uchováva rsID, efektovú alelu, váhu, pôvod hodnoty, proxy pravidlo, kvalitu, rozhodovaciu hranicu a verziu registra. Chýbajúca hodnota sa nikdy nevydáva za genotyp osoby.</p></div>
       <ol class="steps">
-        <li><b>01</b><span><strong>Verzovaný register</strong>Váhy, efektové alely a HLA logika v strojovo čitateľnom JSON.</span></li>
-        <li><b>02</b><span><strong>Anotované dáta</strong>217 stĺpcov s pôvodom direct, proxy alebo population.</span></li>
-        <li><b>03</b><span><strong>Komparatívna validácia</strong>Baseline, additive a structured model na fixných splitoch.</span></li>
-        <li><b>04</b><span><strong>Audit a dokumentácia</strong>Kontrolné súčty, metodické PDF a verejné dátové rozhranie.</span></li>
+        <li><b>01</b><span><strong>Register dôkazov</strong>Fenotyp, SNP, efekt, váha, zdroj a obmedzenie.</span></li>
+        <li><b>02</b><span><strong>Syntetické datasety</strong>Fixné train, validation a test množiny pre každý znak.</span></li>
+        <li><b>03</b><span><strong>Komparatívna validácia</strong>Single-locus baseline, aditívny model a štruktúrované interakčné príznaky.</span></li>
+        <li><b>04</b><span><strong>Lokálny výpočet</strong>Jeden vstupný súbor, sedem oddelených výsledkov a audit markerov.</span></li>
       </ol>
     </section>
-    <section>
-      <div class="section-heading"><div><p class="eyebrow">TESTOVACIA MNOŽINA</p><h2>Komparatívne výsledky</h2></div><a href="docs.html">Metodika a správy →</a></div>
-      <div class="table-wrap"><table><thead><tr><th>Model</th><th>Príznaky</th><th>Accuracy</th><th>Macro F1</th><th>High recall</th><th>High precision</th><th>FN rate</th><th>ROC-AUC</th></tr></thead><tbody>
-        <tr><td>baseline</td><td>5</td><td>70,5 %</td><td>0,515</td><td>100,0 %</td><td>20,0 %</td><td>0,0 %</td><td>0,882</td></tr>
-        <tr><td>additive</td><td>105</td><td>85,7 %</td><td>0,843</td><td>94,8 %</td><td>57,6 %</td><td>5,2 %</td><td>0,963</td></tr>
-        <tr class="highlight"><td><strong>structured</strong></td><td>111</td><td>89,2 %</td><td>0,880</td><td>95,0 %</td><td>71,0 %</td><td>5,0 %</td><td>0,980</td></tr>
-      </tbody></table></div>
-      <p class="caption">Metriky dokazujú algoritmickú vernosť na syntetických dátach. Nepredstavujú klinickú výkonnosť.</p>
-    </section>
-    <section class="flow-section"><p class="eyebrow">PROCESNÁ MAPA</p><div class="flow"><span>Zdroje a register</span><i>→</i><span>Syntetické genotypy</span><i>→</i><span>Fixné datasety</span><i>→</i><span>3 modely</span><i>→</i><span>Test a audit</span></div></section>
+
+    <section><div class="section-heading"><div><p class="eyebrow">TESTOVACIE MNOŽINY</p><h2>Najlepší model podľa macro F1</h2></div><a href="docs.html">Metodika a obmedzenia →</a></div><div class="table-wrap"><table><thead><tr><th>Znak</th><th>Najlepší prístup</th><th>Macro F1</th><th>High recall</th><th>Význam</th></tr></thead><tbody>
+      <tr><td>Vajce</td><td>additive</td><td>0,922</td><td>95,2 %</td><td rowspan="7">Algoritmická vernosť voči syntetickému oracle, nie klinická výkonnosť.</td></tr>
+      <tr><td>Arašidy</td><td>additive</td><td>0,913</td><td>93,6 %</td></tr>
+      <tr><td>Kravské mlieko</td><td>additive</td><td>0,739</td><td>97,5 %</td></tr>
+      <tr><td>Spoločná predispozícia</td><td>additive</td><td>0,906</td><td>93,1 %</td></tr>
+      <tr><td>Laktóza</td><td>rule / baseline</td><td>0,915</td><td>100,0 %</td></tr>
+      <tr><td>Celiakia</td><td>structured</td><td>0,880</td><td>95,0 %</td></tr>
+      <tr><td>Histamín / DAO</td><td>additive</td><td>0,804</td><td>84,2 %</td></tr>
+    </tbody></table></div><p class="caption">Štruktúrované interakcie sa uchovávajú ako porovnávací model. Pri ostatných znakoch neboli automaticky vyhlásené za lepšie, ak to testovacie dáta nepotvrdili.</p></section>
+    <section class="flow-section"><p class="eyebrow">SPOLOČNÁ PROCESNÁ MAPA</p><div class="flow"><span>Primárne zdroje</span><i>→</i><span>Register znaku</span><i>→</i><span>Syntetické genotypy</span><i>→</i><span>3 modely</span><i>→</i><span>Metriky + audit</span></div></section>
   </main>
-  <footer><span>NU3GEN / ALERGENRISK CELIAC PILOT</span><span>Výskumný výstup · bez klinických tvrdení</span></footer>
+  <footer><span>NU3GEN / ALERGENRISK RESEARCH PILOT</span><span>Výskumný výstup · bez klinických tvrdení</span></footer>
 </body>
 </html>

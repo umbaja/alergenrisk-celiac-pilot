@@ -1,0 +1,604 @@
+{
+  "rows": [
+    {
+      "trait_id": "egg",
+      "trait_name": "Vajce",
+      "target": "rs12123821",
+      "gene": "FLG-AS1 / FLG",
+      "risk_allele": "T",
+      "beta": 1.008,
+      "frequency": 0.0437,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs12122629",
+          "proxy_risk_allele": "C",
+          "r2": 0.744769,
+          "d_prime": 0.919032,
+          "p_target_if_proxy": 0.9225731,
+          "p_target_if_other": 0.0082933
+        },
+        {
+          "id": "rs115288876",
+          "proxy_risk_allele": "A",
+          "r2": 0.698182,
+          "d_prime": 0.914501,
+          "p_target_if_proxy": 0.9182405,
+          "p_target_if_other": 0.0103458
+        },
+        {
+          "id": "rs1039088",
+          "proxy_risk_allele": "A",
+          "r2": 0.433114,
+          "d_prime": 0.87341,
+          "p_target_if_proxy": 0.5179372,
+          "p_target_if_other": 0.0055367
+        }
+      ],
+      "evidence_tier": "GWAS, experimentálny panel",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "egg",
+      "trait_name": "Vajce",
+      "target": "rs11949166",
+      "gene": "IL4 / KIF3A",
+      "risk_allele": "A",
+      "beta": 0.478,
+      "frequency": 0.2704,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs11747814",
+          "proxy_risk_allele": "C",
+          "r2": 0.980137,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9855074,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2897442",
+          "proxy_risk_allele": "C",
+          "r2": 0.906123,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 0.931506,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs3798130",
+          "proxy_risk_allele": "T",
+          "r2": 0.560438,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 0.9999994,
+          "p_target_if_other": 0.1188477
+        }
+      ],
+      "evidence_tier": "GWAS, experimentálny panel",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "egg",
+      "trait_name": "Vajce",
+      "target": "rs2212434",
+      "gene": "C11orf30 / LRRC32",
+      "risk_allele": "T",
+      "beta": 0.329,
+      "frequency": 0.44135,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs7126418",
+          "proxy_risk_allele": "T",
+          "r2": 0.968318,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9823009,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7936070",
+          "proxy_risk_allele": "T",
+          "r2": 0.897383,
+          "d_prime": 0.999998,
+          "p_target_if_proxy": 0.9426742,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2155219",
+          "proxy_risk_allele": "T",
+          "r2": 0.818821,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 0.8987851,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "evidence_tier": "GWAS, experimentálny panel",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "egg",
+      "trait_name": "Vajce",
+      "target": "rs1243064",
+      "gene": "SERPINB7 / SERPINB2",
+      "risk_allele": "A",
+      "beta": 0.385,
+      "frequency": 0.2615,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs1243063",
+          "proxy_risk_allele": "C",
+          "r2": 0.979517,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9999998,
+          "p_target_if_other": 0.0053548
+        },
+        {
+          "id": "rs1243039",
+          "proxy_risk_allele": "A",
+          "r2": 0.841576,
+          "d_prime": 0.936277,
+          "p_target_if_proxy": 0.9252968,
+          "p_target_if_other": 0.0166593
+        },
+        {
+          "id": "rs986982",
+          "proxy_risk_allele": "A",
+          "r2": 0.832604,
+          "d_prime": 0.935977,
+          "p_target_if_proxy": 0.9184297,
+          "p_target_if_other": 0.0167377
+        }
+      ],
+      "evidence_tier": "GWAS, experimentálny panel",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "peanut",
+      "trait_name": "Arašidy",
+      "target": "rs7192",
+      "gene": "HLA-DRA",
+      "risk_allele": "T",
+      "beta": 0.531,
+      "frequency": 0.3675,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs2213585",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2227139",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7195",
+          "proxy_risk_allele": "A",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "evidence_tier": "2 replikované HLA markery + 3 sugestívne GWAS lokusy",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "peanut",
+      "trait_name": "Arašidy",
+      "target": "rs9275596",
+      "gene": "HLA-DQB1 / HLA-DQA2",
+      "risk_allele": "C",
+      "beta": 0.531,
+      "frequency": 0.31015,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs1612904",
+          "proxy_risk_allele": "C",
+          "r2": 0.995369,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9968052,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2856717",
+          "proxy_risk_allele": "A",
+          "r2": 0.868985,
+          "d_prime": 0.999998,
+          "p_target_if_proxy": 0.9096194,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2858310",
+          "proxy_risk_allele": "G",
+          "r2": 0.864151,
+          "d_prime": 0.995007,
+          "p_target_if_proxy": 0.9092744,
+          "p_target_if_other": 0.0015484
+        }
+      ],
+      "evidence_tier": "2 replikované HLA markery + 3 sugestívne GWAS lokusy",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "peanut",
+      "trait_name": "Arašidy",
+      "target": "rs7936434",
+      "gene": "C11orf30 / EMSY",
+      "risk_allele": "C",
+      "beta": 0.457,
+      "frequency": 0.46915,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs7936070",
+          "proxy_risk_allele": "T",
+          "r2": 0.996016,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0018692
+        },
+        {
+          "id": "rs2155219",
+          "proxy_risk_allele": "T",
+          "r2": 0.908326,
+          "d_prime": 0.995747,
+          "p_target_if_proxy": 0.9533974,
+          "p_target_if_other": 0.0019955
+        },
+        {
+          "id": "rs2212434",
+          "proxy_risk_allele": "T",
+          "r2": 0.893808,
+          "d_prime": 0.999998,
+          "p_target_if_proxy": 0.999999,
+          "p_target_if_other": 0.0498229
+        }
+      ],
+      "evidence_tier": "2 replikované HLA markery + 3 sugestívne GWAS lokusy",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "peanut",
+      "trait_name": "Arašidy",
+      "target": "rs7475217",
+      "gene": "CTNNA3",
+      "risk_allele": "T",
+      "beta": 0.495,
+      "frequency": 0.3688,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs2394283",
+          "proxy_risk_allele": "G",
+          "r2": 1.0,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 1.0,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs71193762",
+          "proxy_risk_allele": "A",
+          "r2": 0.995741,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9973117,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7908849",
+          "proxy_risk_allele": "C",
+          "r2": 0.907389,
+          "d_prime": 0.956642,
+          "p_target_if_proxy": 0.9675021,
+          "p_target_if_other": 0.0159901
+        }
+      ],
+      "evidence_tier": "2 replikované HLA markery + 3 sugestívne GWAS lokusy",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "peanut",
+      "trait_name": "Arašidy",
+      "target": "rs744597",
+      "gene": "ARHGAP24",
+      "risk_allele": "C",
+      "beta": 0.494,
+      "frequency": 0.5775,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs340183",
+          "proxy_risk_allele": "T",
+          "r2": 0.854687,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 0.9386105,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs340185",
+          "proxy_risk_allele": "T",
+          "r2": 0.851103,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 0.9370965,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs398803",
+          "proxy_risk_allele": "A",
+          "r2": 0.850332,
+          "d_prime": 0.995357,
+          "p_target_if_proxy": 0.9384461,
+          "p_target_if_other": 0.0026813
+        }
+      ],
+      "evidence_tier": "2 replikované HLA markery + 3 sugestívne GWAS lokusy",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "milk",
+      "trait_name": "Kravské mlieko",
+      "target": "rs12123821",
+      "gene": "FLG region",
+      "risk_allele": "T",
+      "beta": 1.008,
+      "frequency": 0.0437,
+      "frequency_status": "EUR-model",
+      "required_proxy": true,
+      "proxies": [
+        {
+          "id": "rs115288876",
+          "proxy_risk_allele": "A",
+          "r2": 0.698182,
+          "d_prime": 0.914501,
+          "p_target_if_proxy": 0.9182405,
+          "p_target_if_other": 0.0103458
+        }
+      ],
+      "evidence_tier": "GWAS + malá kandidátna štúdia",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "milk",
+      "trait_name": "Kravské mlieko",
+      "target": "rs11949166",
+      "gene": "IL4 / KIF3A",
+      "risk_allele": "A",
+      "beta": 0.478,
+      "frequency": 0.2704,
+      "frequency_status": "EUR-model",
+      "required_proxy": true,
+      "proxies": [
+        {
+          "id": "rs63582760",
+          "aliases": [
+            "rs10588133"
+          ],
+          "proxy_risk_allele": "T",
+          "r2": 0.9551,
+          "d_prime": 0.9798,
+          "p_target_if_proxy": 0.9852399,
+          "p_target_if_other": 0.0068027
+        }
+      ],
+      "evidence_tier": "GWAS + malá kandidátna štúdia",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "milk",
+      "trait_name": "Kravské mlieko",
+      "target": "rs2212434",
+      "gene": "C11orf30 / LRRC32",
+      "risk_allele": "T",
+      "beta": 0.3,
+      "frequency": 0.44135,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [],
+      "evidence_tier": "GWAS + malá kandidátna štúdia",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "milk",
+      "trait_name": "Kravské mlieko",
+      "target": "rs17616434",
+      "gene": "TLR6 region",
+      "risk_allele": "C",
+      "beta": 0.25,
+      "frequency": 0.2843,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [],
+      "evidence_tier": "GWAS + malá kandidátna štúdia",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "milk",
+      "trait_name": "Kravské mlieko",
+      "target": "rs2069772",
+      "gene": "IL2 / ADAD1",
+      "risk_allele": "T",
+      "beta": 0.25,
+      "frequency": 0.703777,
+      "frequency_status": "EUR-model",
+      "required_proxy": true,
+      "proxies": [
+        {
+          "id": "rs17388568",
+          "proxy_risk_allele": "G",
+          "r2": 0.981,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.994382,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "evidence_tier": "GWAS + malá kandidátna štúdia",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "shared",
+      "trait_name": "Spoločná potravinová predispozícia",
+      "target": "rs12123821",
+      "gene": "FLG-AS1 / FLG",
+      "risk_allele": "T",
+      "beta": 0.97456,
+      "frequency": 0.0437,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs12122629",
+          "proxy_risk_allele": "C",
+          "r2": 0.744769,
+          "d_prime": 0.919032,
+          "p_target_if_proxy": 0.9225731,
+          "p_target_if_other": 0.0082933
+        },
+        {
+          "id": "rs115288876",
+          "proxy_risk_allele": "A",
+          "r2": 0.698182,
+          "d_prime": 0.914501,
+          "p_target_if_proxy": 0.9182405,
+          "p_target_if_other": 0.0103458
+        }
+      ],
+      "evidence_tier": "GWAS všeobecnej potravinovej alergie",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "shared",
+      "trait_name": "Spoločná potravinová predispozícia",
+      "target": "rs11949166",
+      "gene": "IL4 / KIF3A",
+      "risk_allele": "A",
+      "beta": 0.462035,
+      "frequency": 0.2704,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs11747814",
+          "proxy_risk_allele": "C",
+          "r2": 0.980137,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9855074,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs2897442",
+          "proxy_risk_allele": "C",
+          "r2": 0.906123,
+          "d_prime": 0.999999,
+          "p_target_if_proxy": 0.931506,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "evidence_tier": "GWAS všeobecnej potravinovej alergie",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "shared",
+      "trait_name": "Spoločná potravinová predispozícia",
+      "target": "rs2212434",
+      "gene": "C11orf30 / LRRC32",
+      "risk_allele": "T",
+      "beta": 0.300105,
+      "frequency": 0.44135,
+      "frequency_status": "EUR-model",
+      "required_proxy": false,
+      "proxies": [
+        {
+          "id": "rs7126418",
+          "proxy_risk_allele": "T",
+          "r2": 0.968318,
+          "d_prime": 1.0,
+          "p_target_if_proxy": 0.9823009,
+          "p_target_if_other": 0.0
+        },
+        {
+          "id": "rs7936070",
+          "proxy_risk_allele": "T",
+          "r2": 0.897383,
+          "d_prime": 0.999998,
+          "p_target_if_proxy": 0.9426742,
+          "p_target_if_other": 0.0
+        }
+      ],
+      "evidence_tier": "GWAS všeobecnej potravinovej alergie",
+      "missing_policy": "population-expectation-for-ML-only"
+    },
+    {
+      "trait_id": "lactose",
+      "trait_name": "Laktóza",
+      "target": "rs4988235",
+      "gene": "MCM6 / LCT",
+      "risk_allele": "G",
+      "beta": 1.0,
+      "frequency": 0.5,
+      "frequency_status": "synthetic-balanced-assumption",
+      "required_proxy": false,
+      "proxies": [],
+      "evidence_tier": "funkčný populačne špecifický marker",
+      "missing_policy": "no-imputation"
+    },
+    {
+      "trait_id": "histamine",
+      "trait_name": "Histamín / DAO",
+      "target": "rs2052129",
+      "gene": "AOC1 regulatory region",
+      "risk_allele": "T",
+      "beta": 1.0,
+      "frequency": 0.25,
+      "frequency_status": "synthetic-stress-assumption",
+      "required_proxy": false,
+      "proxies": [],
+      "evidence_tier": "kandidátna asociačná štúdia aktivity DAO",
+      "missing_policy": "no-imputation"
+    },
+    {
+      "trait_id": "histamine",
+      "trait_name": "Histamín / DAO",
+      "target": "rs10156191",
+      "gene": "AOC1 Thr16Met",
+      "risk_allele": "T",
+      "beta": 1.0,
+      "frequency": 0.25,
+      "frequency_status": "synthetic-stress-assumption",
+      "required_proxy": false,
+      "proxies": [],
+      "evidence_tier": "kandidátna asociačná štúdia aktivity DAO",
+      "missing_policy": "no-imputation"
+    },
+    {
+      "trait_id": "histamine",
+      "trait_name": "Histamín / DAO",
+      "target": "rs1049742",
+      "gene": "AOC1 Ser332Phe",
+      "risk_allele": "T",
+      "beta": 1.0,
+      "frequency": 0.12,
+      "frequency_status": "synthetic-stress-assumption",
+      "required_proxy": false,
+      "proxies": [],
+      "evidence_tier": "kandidátna asociačná štúdia aktivity DAO",
+      "missing_policy": "no-imputation"
+    }
+  ]
+}

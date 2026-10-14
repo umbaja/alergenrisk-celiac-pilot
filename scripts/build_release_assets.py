@@ -242,10 +242,17 @@ def build_checksums(root: Path) -> None:
     candidates = [
         root / "config" / "celiac_model_v1.json",
         root / "config" / "celiac_proxy_audit_v1.json",
+        root / "config" / "trait_models_v1.json",
         root / "data" / "synthetic" / "celiac_pilot_v1.csv.gz",
         root / "artifacts" / "models" / "structured.npz",
+        root / "artifacts" / "multitrait" / "evaluation.json",
         root / "site" / "assets" / "structured-model.json",
+        root / "site" / "assets" / "trait-structured-models.json",
     ]
+    candidates.extend(
+        path for path in sorted((root / "data" / "synthetic").glob("*_pilot_v1.csv.gz"))
+        if path.name != "celiac_pilot_v1.csv.gz"
+    )
     candidates.extend(sorted((root / "output" / "pdf").glob("*.pdf")))
     rows = [
         {"path": path.relative_to(root).as_posix(), "sha256": sha256(path), "bytes": path.stat().st_size}
@@ -254,7 +261,7 @@ def build_checksums(root: Path) -> None:
     ]
     write_json(
         root / "artifacts" / "release-manifest.json",
-        {"release": "v0.1.0", "files": rows, "clinical_validation": False},
+        {"release": "v0.2.0", "files": rows, "clinical_validation": False},
     )
     checksum_path = root / "artifacts" / "checksums.sha256"
     checksum_path.write_text(
