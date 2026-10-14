@@ -93,8 +93,8 @@
     },
     {
       "path": "output/pdf/AlergenRisk_Multitrait_Pilot_Metodika_a_validacia.pdf",
-      "sha256": "bd403a5117c056bca6412d2825c681c742acaac9b6614849075d4d2bdc285f61",
-      "bytes": 88629
+      "sha256": "099e26dcd6e090a7550401848d3c2c45abba07dacb96644b9f85fd47085534ba",
+      "bytes": 151462
     }
   ],
   "clinical_validation": false
